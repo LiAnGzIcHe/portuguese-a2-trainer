@@ -1,0 +1,707 @@
+{
+  "title": "A1 Unidade Example Bank",
+  "language_standard": "pt-PT",
+  "source_note": "User-provided course notes saved as a local structured example bank.",
+  "runtime_sentence_bank": {
+    "path": "../daily-sentence-bank.js",
+    "description": "Browser-readable local bank with 100 high-frequency daily pt-PT sentences grouped into 10 scenes.",
+    "scene_count": 10,
+    "sentence_count": 100
+  },
+  "units": [
+    {
+      "id": "unidade-01",
+      "title": "Olá, bom dia!",
+      "theme_zh": "打招呼与自我介绍",
+      "textbook_examples": [
+        {
+          "pt": "Olá! Como te chamas?",
+          "zh": "你好！你叫什么名字？"
+        },
+        {
+          "pt": "Quem é ele? É o Jorge.",
+          "zh": "他是谁？他是若昂。"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "Ser",
+          "explanation": "用于永久身份或本质。",
+          "forms": ["eu sou", "tu és", "você/ele/ela é", "nós somos", "vocês/eles/elas são"]
+        },
+        {
+          "topic": "Chamar-se",
+          "explanation": "代词式动词，表示名叫。",
+          "forms": ["eu chamo-me", "tu chamas-te", "você/ele/ela chama-se"]
+        },
+        {
+          "topic": "定冠词与人名",
+          "explanation": "葡语中人名前通常加定冠词 o/a。",
+          "examples": ["o Jorge", "a Joana"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "尝试用正式敬语 o senhor / a senhora 向一位长辈询问名字，并介绍自己。",
+        "answer": "Como se chama o senhor? Eu chamo-me..."
+      }
+    },
+    {
+      "id": "unidade-02",
+      "title": "Sou de Lisboa",
+      "theme_zh": "表达来源与位置",
+      "textbook_examples": [
+        {
+          "pt": "Moscovo fica na Rússia.",
+          "zh": "莫斯科在俄罗斯。"
+        },
+        {
+          "pt": "A Ana é de Portugal, mas mora em Espanha.",
+          "zh": "安娜是葡萄牙人，但住在西班牙。"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "Ser de",
+          "explanation": "固定搭配，表示来自或起源。",
+          "examples": ["sou de Lisboa", "é de Portugal"]
+        },
+        {
+          "topic": "Ficar em",
+          "explanation": "固定搭配，表示地理位置。",
+          "examples": ["fica na Rússia", "fica em Lisboa"]
+        },
+        {
+          "topic": "de + artigo definido",
+          "explanation": "de 与定冠词缩合。",
+          "forms": ["de + o = do", "de + a = da", "de + os = dos", "de + as = das"]
+        },
+        {
+          "topic": "em + artigo definido",
+          "explanation": "em 与定冠词缩合。",
+          "forms": ["em + o = no", "em + a = na", "em + os = nos", "em + as = nas"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "Eu sou ____ (de+o) Brasil, e moro ____ (em+a) capital, Brasília.",
+        "answer": "do / na"
+      }
+    },
+    {
+      "id": "unidade-03",
+      "title": "Falo português",
+      "theme_zh": "国籍与语言",
+      "textbook_examples": [
+        {
+          "pt": "Que línguas falas? Falo árabe, francês e um pouco de português.",
+          "zh": "你说什么语言？我说阿拉伯语、法语和一点葡萄牙语。"
+        },
+        {
+          "pt": "O Ioannis e a Maria são russos.",
+          "zh": "伊奥尼斯和玛丽亚是俄罗斯人。"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "Falar",
+          "explanation": "第一类 -ar 规则动词变位。",
+          "forms": ["eu falo", "tu falas", "ele/ela fala", "nós falamos", "eles/elas falam"]
+        },
+        {
+          "topic": "国籍形容词性数变化",
+          "explanation": "通常 -o 为阳性，-a 为阴性，-os 为阳性复数。",
+          "examples": ["russo", "russa", "russos", "chinesa"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "A Marta ____ (morar) em Pequim, ela é ____ (中国人 - 阴性).",
+        "answer": "mora / chinesa"
+      }
+    },
+    {
+      "id": "unidade-04",
+      "title": "Como se diz isto em português?",
+      "theme_zh": "教室物品与颜色",
+      "textbook_examples": [
+        {
+          "pt": "Como se diz isto/isso/aquilo em português?",
+          "zh": "这/那/远处那个用葡语怎么说？"
+        },
+        {
+          "pt": "O jornal português é do João.",
+          "zh": "这份葡萄牙报纸是若昂的。"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "中性指示代词",
+          "explanation": "指代未知事物，无阴阳性和复数变化。",
+          "forms": ["isto = 近说话人 / aqui", "isso = 近听话人 / aí", "aquilo = 远处 / ali 或 lá"]
+        },
+        {
+          "topic": "Ser + de",
+          "explanation": "表达所有权，常与缩合形式连用。",
+          "examples": ["é do João", "é da Ana"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "O que é ____ (你手里的东西)? / ____ (我手里的) é um dicionário.",
+        "answer": "isso / Isto"
+      }
+    },
+    {
+      "id": "unidade-05",
+      "title": "Tenho carta de condução",
+      "theme_zh": "物品与所属",
+      "textbook_examples": [
+        {
+          "pt": "Desculpe, tem uma caneta?",
+          "zh": "打扰一下，您有钢笔吗？"
+        },
+        {
+          "pt": "Onde está a minha carteira? Está na mala.",
+          "zh": "我的钱包在哪？在包里。"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "Ter",
+          "explanation": "极高频不规则动词，表示有。",
+          "forms": ["eu tenho", "tu tens", "você/ele/ela tem", "nós temos", "vocês/eles/elas têm"]
+        },
+        {
+          "topic": "Ter + idade / objeto",
+          "explanation": "表达年龄或拥有物品，不能用 ser 表达岁数。",
+          "examples": ["tenho vinte anos", "tenho uma caneta"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "将句子 A sala tem um quadro 改为提问句，用 O que é que。",
+        "answer": "O que é que a sala tem?"
+      }
+    },
+    {
+      "id": "unidade-06",
+      "title": "Sou estudante",
+      "theme_zh": "个人信息与数字",
+      "textbook_examples": [
+        {
+          "pt": "Como se escreve o teu nome?",
+          "zh": "你的名字怎么拼写？"
+        },
+        {
+          "pt": "Ela mora no terceiro andar.",
+          "zh": "她住在三楼。"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "序数词",
+          "explanation": "序数词放在名词前，且必须与名词性数一致。",
+          "forms": ["primeiro", "segundo", "terceiro", "quarto"]
+        },
+        {
+          "topic": "Quanto",
+          "explanation": "疑问代词 quanto 必须与后面的名词在性和数上保持一致。",
+          "examples": ["quantos anos", "quantas línguas", "quanto dinheiro"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "____ (多少) cadernos tens na mochila? O meu escritório é no ____ (第六) andar.",
+        "answer": "Quantos / sexto"
+      }
+    },
+    {
+      "id": "unidade-07",
+      "title": "Gosto da minha cidade",
+      "theme_zh": "描述地点与喜好",
+      "textbook_examples": [
+        {
+          "pt": "O Rodrigo está longe do centro da cidade.",
+          "zh": "罗德里戈离市中心很远。"
+        },
+        {
+          "pt": "Gostas da minha casa?",
+          "zh": "你喜欢我的房子吗？"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "Gostar de",
+          "explanation": "gostar 后必须强制接介词 de。",
+          "examples": ["gosto de Lisboa", "gostas da minha casa"]
+        },
+        {
+          "topic": "de + 指示代词 / 地点副词",
+          "explanation": "介词 de 与指示代词和地点副词缩合。",
+          "forms": ["de + isto = disto", "de + isso = disso", "de + aquilo = daquilo", "de + aqui = daqui", "de + aí = daí", "de + ali = dali"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "你喜欢里斯本吗？不，我不喜欢那里。提示：使用 gostar de + ali 的缩合。",
+        "answer": "Gostas de Lisboa? Não, não gosto dali."
+      }
+    },
+    {
+      "id": "unidade-08",
+      "title": "Trabalho num escritório",
+      "theme_zh": "职业与频率",
+      "textbook_examples": [
+        {
+          "pt": "Quantas horas trabalha por dia? Normalmente, são oito horas por dia.",
+          "zh": "您每天工作几小时？通常每天八小时。"
+        },
+        {
+          "pt": "Trabalho num escritório em Lisboa.",
+          "zh": "我在里斯本的一家办公室工作。"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "em/de + artigo indefinido",
+          "explanation": "介词 de/em 遇到 um/uma 必须缩合。",
+          "forms": ["em + um = num", "em + uma = numa", "de + um = dum", "de + uma = duma"]
+        },
+        {
+          "topic": "Muito / Pouco",
+          "explanation": "修饰动词时不变化；修饰名词时必须性数一致。",
+          "examples": ["trabalho muito", "muitos livros", "pouca água"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "A Ana trabalha ____ (em+uma) escola e o marido precisa ____ (de+um) carro.",
+        "answer": "numa / dum"
+      }
+    },
+    {
+      "id": "unidade-09",
+      "title": "Tenho um irmão",
+      "theme_zh": "家庭成员与物主代词",
+      "textbook_examples": [
+        {
+          "pt": "A minha mãe chama-se Rita. Tenho um irmão.",
+          "zh": "我妈妈叫丽塔。我有一个兄弟。"
+        },
+        {
+          "pt": "O filho da minha tia é o meu primo.",
+          "zh": "我阿姨的儿子是我的表兄弟。"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "物主代词",
+          "explanation": "必须与被拥有的物品在性和数上保持一致，而不是与拥有者的性别一致。",
+          "forms": [
+            "eu -> meu / minha / meus / minhas",
+            "tu -> teu / tua / teus / tuas",
+            "você/ele/ela -> seu / sua / seus / suas",
+            "nós -> nosso / nossa / nossos / nossas"
+          ]
+        },
+        {
+          "topic": "dele / dela",
+          "explanation": "为避免 seu/sua 歧义，常用 dele/dela 放在名词后。",
+          "examples": ["os carros dele", "a casa dela"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "O Pedro e a Ana amam ____ (他们的) filhos. Os carros ____ (他的) são caros.",
+        "answer": "seus 或 os filhos deles / dele"
+      }
+    },
+    {
+      "id": "unidade-10",
+      "title": "Tenho olhos azuis",
+      "theme_zh": "外貌特征与生理状态",
+      "textbook_examples": [
+        {
+          "pt": "Tem um olho azul e um castanho. O Carlos tem bigode.",
+          "zh": "它有一只蓝眼睛和一只棕色眼睛。卡洛斯留着胡子。"
+        },
+        {
+          "pt": "O Pedro está com sono. Estou constipada.",
+          "zh": "佩德罗困了。我感冒了。"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "Ser",
+          "explanation": "用于描述外貌特征。",
+          "examples": ["Ele é alto.", "A Ana é bonita."]
+        },
+        {
+          "topic": "Estar",
+          "explanation": "用于描述临时生理状态。",
+          "examples": ["Ele está cansado.", "Estou constipada."]
+        },
+        {
+          "topic": "Estar com + nome",
+          "explanation": "表达临时感觉。",
+          "examples": ["estar com fome", "estar com sede", "estar com sono", "estar com calor", "estar com frio"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "安娜很漂亮，但是她现在很饿。",
+        "answer": "A Ana é bonita, mas agora está com fome."
+      }
+    }
+  ],
+  "extended_scene_sentence_bank": [
+    {
+      "id": "extended-scene-01",
+      "title": "日常指令与请求",
+      "grammar_focus": "Imperativo",
+      "sentences": [
+        { "pt": "João, aproveita o dia!", "zh": "若昂，享受今天吧！" },
+        { "pt": "Filho, fecha a porta!", "zh": "儿子，关上门！" },
+        { "pt": "Entre por aquela porta!", "zh": "请从那扇门进！" },
+        { "pt": "Fala alto!", "zh": "大声点说！" },
+        { "pt": "Coma o bolo todo!", "zh": "把蛋糕全吃完！" },
+        { "pt": "Abram a janela!", "zh": "把窗户打开！" },
+        { "pt": "Não fume aqui dentro!", "zh": "请勿在室内吸烟！" },
+        { "pt": "Lute como um leão!", "zh": "像狮子一样去战斗！" },
+        { "pt": "Venham todos para a sala!", "zh": "大家都到客厅来！" },
+        { "pt": "Conduza com cuidado!", "zh": "小心驾驶！" },
+        { "pt": "Lê a história toda!", "zh": "把故事读完！" }
+      ]
+    },
+    {
+      "id": "extended-scene-02",
+      "title": "日常沟通与信息传递",
+      "grammar_focus": "Dizer no presente e pretérito perfeito",
+      "sentences": [
+        { "pt": "Ontem, eu disse a verdade ao meu chefe.", "zh": "昨天，我跟老板说了实话。" },
+        { "pt": "Tu disseste que vinhas à festa, mas não apareceste.", "zh": "你说过会来派对，但你没出现。" },
+        { "pt": "Ela disse que não sabia da reunião.", "zh": "她说她不知道会议的事。" },
+        { "pt": "Nós dissemos tudo o que pensávamos.", "zh": "我们说出了所有的想法。" },
+        { "pt": "Vocês disseram que iam tentar, certo?", "zh": "你们说过会尝试的，对吧？" },
+        { "pt": "Eles disseram \"adeus\" e saíram.", "zh": "他们说了“再见”然后离开了。" },
+        { "pt": "Eu digo a verdade.", "zh": "我说的是实话。" },
+        { "pt": "Ela diz que está cansada.", "zh": "她说她累了。" },
+        { "pt": "Por que razão vocês dizem isso?", "zh": "你们为什么这么说？" },
+        { "pt": "Nós dizemos mentiras.", "zh": "我们在撒谎。" },
+        { "pt": "Eles dizem que sim.", "zh": "他们说是的。" }
+      ]
+    },
+    {
+      "id": "extended-scene-03",
+      "title": "生活事件与行动安排",
+      "grammar_focus": "Fazer e pôr no pretérito perfeito",
+      "sentences": [
+        { "pt": "Ontem, eu fiz um bolo de chocolate delicioso.", "zh": "昨天，我做了一个美味的巧克力蛋糕。" },
+        { "pt": "O que é que tu fizeste no fim de semana passado?", "zh": "上个周末你做了什么？" },
+        { "pt": "Na semana passada, a minha mãe fez as malas.", "zh": "上周，我妈妈收拾了行李。" },
+        { "pt": "Eu e a Maria fizemos muitas compras no Rossio.", "zh": "我和玛丽亚在罗西奥广场买了很多东西。" },
+        { "pt": "Eles fizeram uma surpresa na festa de aniversário.", "zh": "他们在生日派对上制造了惊喜。" },
+        { "pt": "Você fez o TPC?", "zh": "你做家庭作业了吗？" },
+        { "pt": "A Joana fez vinte anos ontem.", "zh": "乔安娜昨天刚满20岁。" },
+        { "pt": "O que é que a Júlia e o Diogo fizeram no sábado passado?", "zh": "朱莉娅和迪奥戈上周六做了什么？" },
+        { "pt": "Nós fizemos a nossa cama esta manhã.", "zh": "今天早上我们整理了床铺。" },
+        { "pt": "Esta manhã, eu pus os livros na estante.", "zh": "今天早上，我把书放到了书架上。" },
+        { "pt": "Quem pôs a mesa para o jantar?", "zh": "谁布置的餐桌？" },
+        { "pt": "O sol pôs-se às dezanove horas no mar.", "zh": "太阳在晚上7点落入海中。" },
+        { "pt": "Nós pusemos ordem na sala após a festa.", "zh": "派对结束后我们收拾了房间。" },
+        { "pt": "Fui eu quem pôs o casaco.", "zh": "是我穿上了外套。" },
+        { "pt": "Ó João, puseste o rádio a tocar às três da tarde?", "zh": "嘿若昂，你下午三点开收音机了吗？" },
+        { "pt": "Vocês já puseram todas as bagagens no carro?", "zh": "你们把所有行李都放进车里了吗？" },
+        { "pt": "No ano passado, todos puseram as roupas de verão na nova mala.", "zh": "去年，大家都把夏装放进了新行李箱里。" }
+      ]
+    },
+    {
+      "id": "extended-scene-04",
+      "title": "意图、需求与物品携带",
+      "grammar_focus": "Querer e trazer no pretérito perfeito",
+      "sentences": [
+        { "pt": "Eles quiseram vender o carro, mas desistiram.", "zh": "他们本来想卖车，但后来放弃了。" },
+        { "pt": "Tu quiseste falar com o diretor na semana passada?", "zh": "你上周想和主任谈谈吗？" },
+        { "pt": "Nós quisemos ajudar, mas não tivemos tempo.", "zh": "我们想帮忙，但没有时间。" },
+        { "pt": "Ela quis comprar o livro, mas estava esgotado.", "zh": "她想买那本书，但已经卖光了。" },
+        { "pt": "A Ana e a Rosa quiseram terminar o projeto mais cedo.", "zh": "安娜和罗莎想早点完成项目。" },
+        { "pt": "Foi na semana passada que eu trouxe o bolo para a festa.", "zh": "就在上周，我带了蛋糕去派对。" },
+        { "pt": "Nós trouxemos todos os documentos necessários.", "zh": "我们带齐了所有需要的文件。" },
+        { "pt": "Eles trouxeram ótimas notícias da viagem.", "zh": "他们从旅行中带回了好消息。" },
+        { "pt": "Está a chover. Trouxeste o guarda-chuva?", "zh": "下雨了，你带伞了吗？" },
+        { "pt": "A Maria trouxe o seu cão ao parque.", "zh": "玛丽亚把她的狗带到了公园。" },
+        { "pt": "Os meus amigos trouxeram o violão para a festa de anos da Marta.", "zh": "我的朋友们带了吉他去玛尔塔的生日派对。" }
+      ]
+    }
+  ],
+  "exam_review_modules": [
+    {
+      "id": "exam-module-01",
+      "title": "Estar/Ir 与核心介词 em/a/de 的缩合",
+      "theme_zh": "位置、方向、来源、材质与所属",
+      "priority": "foundation",
+      "core_examples": [
+        {
+          "pt": "A Ana está no escritório.",
+          "zh": "安娜在办公室里。",
+          "focus": "Estar + em；em + o = no"
+        },
+        {
+          "pt": "A Bruna vai ao refeitório.",
+          "zh": "布鲁娜去食堂。",
+          "focus": "Ir + a；a + o = ao"
+        },
+        {
+          "pt": "Os barcos partem dos Açores.",
+          "zh": "船只从亚速尔群岛出发。",
+          "focus": "de + os = dos"
+        },
+        {
+          "pt": "Este livro é do meu amigo.",
+          "zh": "这本书是我朋友的。",
+          "focus": "Ser + de 表所属；de + o = do"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "Estar",
+          "explanation": "表示位置或状态。",
+          "forms": ["eu estou", "tu estás", "ele/ela/você está", "nós estamos", "vós estais", "eles/elas/vocês estão"]
+        },
+        {
+          "topic": "Ir",
+          "explanation": "表示去某处或朝向某目的地。",
+          "forms": ["eu vou", "tu vais", "ele/ela/você vai", "nós vamos", "vós ides", "eles/elas/vocês vão"]
+        },
+        {
+          "topic": "em + artigo definido",
+          "forms": ["em + o = no", "em + a = na", "em + os = nos", "em + as = nas"]
+        },
+        {
+          "topic": "a + artigo definido",
+          "forms": ["a + o = ao", "a + a = à", "a + os = aos", "a + as = às"]
+        },
+        {
+          "topic": "de + artigo definido",
+          "forms": ["de + o = do", "de + a = da", "de + os = dos", "de + as = das"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "明天我要去海滩，但我现在在学校。我的包是布料 algodão 做的。",
+        "thinking": "使用 Ir+a 缩合、Estar+em 缩合，以及 de 表材质时不缩合。",
+        "answer": "Amanhã eu vou à praia, mas agora estou na escola. A minha mala é de algodão."
+      }
+    },
+    {
+      "id": "exam-module-02",
+      "title": "Ser 与 Estar 的终极语境区分",
+      "theme_zh": "永久本质与临时状态",
+      "priority": "high",
+      "core_examples": [
+        {
+          "pt": "Nós somos estudantes, mas ela é professora.",
+          "zh": "我们是学生，但她是老师。",
+          "focus": "Ser 表身份、职业、本质"
+        },
+        {
+          "pt": "A criança está calma.",
+          "zh": "孩子现在很安静。",
+          "focus": "Estar 表临时状态"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "Ser",
+          "explanation": "用于身份、国籍、职业、起源、固有特征、婚姻状况和客观时间。",
+          "forms": ["eu sou", "tu és", "ele/ela/você é", "nós somos", "eles/elas/vocês são"]
+        },
+        {
+          "topic": "Estar",
+          "explanation": "用于临时状态、当前位置、天气、问候和正在进行的动作。",
+          "examples": ["estar cansado", "estar no hospital", "estar a estudar"]
+        },
+        {
+          "topic": "国籍阴阳性",
+          "examples": ["português / portuguesa", "chinês / chinesa", "alemão / alemã"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "O Pedro ____ de Lisboa e ____ muito simpático, mas hoje ele ____ cansado e ____ no hospital.",
+        "answer": "é / é / está / está"
+      }
+    },
+    {
+      "id": "exam-module-03",
+      "title": "空间指示代词与方位副词的距离绑定",
+      "theme_zh": "近中远、指示代词与方位表达",
+      "priority": "high",
+      "core_examples": [
+        {
+          "pt": "Isto aqui é um presente para ti.",
+          "zh": "这里这个是给你的礼物。",
+          "focus": "近说话人：isto/este/esta + aqui/cá"
+        },
+        {
+          "pt": "O que é isso aí?",
+          "zh": "你那里的那个是什么？",
+          "focus": "近听话人：isso/esse/essa + aí"
+        },
+        {
+          "pt": "A entrada fica ali ao fundo da rua.",
+          "zh": "入口在街道尽头那里。",
+          "focus": "远离双方：aquilo/aquele/aquela + ali/lá"
+        },
+        {
+          "pt": "O rato está debaixo do gato.",
+          "zh": "老鼠在猫的下面。",
+          "focus": "方位副词短语 + de"
+        },
+        {
+          "pt": "A pomba está em cima do telhado.",
+          "zh": "鸟在屋顶上。",
+          "focus": "em cima de + artigo"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "三步距离法则",
+          "forms": ["近：isto/este/esta + aqui/cá", "中：isso/esse/essa + aí", "远：aquilo/aquele/aquela + ali/lá"]
+        },
+        {
+          "topic": "方位介词短语",
+          "explanation": "多数方位表达后面必须接 de，并与冠词缩合。",
+          "forms": ["dentro de", "debaixo de / sob", "em cima de / sobre", "à frente de", "atrás de", "ao lado de", "no meio de"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "如果书在电脑的旁边，且离你很远。请用指示代词和方位词造句。",
+        "answer": "Aquele livro ali está ao lado do computador."
+      }
+    },
+    {
+      "id": "exam-module-04",
+      "title": "物主代词的向后看原则",
+      "theme_zh": "物主代词与被拥有物一致",
+      "priority": "high",
+      "core_examples": [
+        {
+          "pt": "O meu nome é Hugo e esta é a minha família.",
+          "zh": "我的名字是雨果，这是我的家庭。",
+          "focus": "meu/minha 跟后面的名词一致"
+        },
+        {
+          "pt": "Essa é a nossa escola. A escola deles é em Alvalade.",
+          "zh": "这是我们的学校。他们的学校在阿尔瓦拉德。",
+          "focus": "nossa 修饰 escola；deles 避免歧义"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "物主代词一致原则",
+          "explanation": "物主代词必须与被拥有的物品在性别和数量上保持一致，而不是与拥有者一致。"
+        },
+        {
+          "topic": "物主代词表",
+          "forms": [
+            "eu -> o meu / a minha / os meus / as minhas",
+            "tu -> o teu / a tua / os teus / as tuas",
+            "nós -> o nosso / a nossa / os nossos / as nossas"
+          ]
+        },
+        {
+          "topic": "dele/dela/deles/delas",
+          "explanation": "为了避免 seu/sua 歧义，表达他的/她的/他们的时，通常把 dele/dela/deles/delas 放在名词后。"
+        }
+      ],
+      "teacher_drill": {
+        "task": "将 A minha mãe e o meu pai estão em casa 改为我们的妈妈和我们的爸爸在家。",
+        "answer": "A nossa mãe e o nosso pai estão em casa."
+      }
+    },
+    {
+      "id": "exam-module-05",
+      "title": "时间表达与特殊介词短语",
+      "theme_zh": "几点钟、在几点、多久之后",
+      "priority": "medium",
+      "core_examples": [
+        {
+          "pt": "São três horas da tarde.",
+          "zh": "下午三点。",
+          "focus": "表达几点钟"
+        },
+        {
+          "pt": "A que horas acaba o filme? À uma. Às duas.",
+          "zh": "电影几点结束？一点。两点。",
+          "focus": "在几点用 à/às"
+        },
+        {
+          "pt": "A aula começa daqui a duas horas.",
+          "zh": "课程在两小时后开始。",
+          "focus": "daqui a 表示从现在起多久之后"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "horas",
+          "explanation": "表达几点钟通常用 ser；一点用单数，其他时间多用复数。",
+          "examples": ["É uma e meia.", "São três horas."]
+        },
+        {
+          "topic": "à / às",
+          "explanation": "表示在几点做某事，用 a + 定冠词的缩合。",
+          "examples": ["à uma", "às duas", "às três e meia"]
+        },
+        {
+          "topic": "daqui a",
+          "explanation": "表示从现在开始过多久。",
+          "examples": ["daqui a duas horas", "daqui a uma semana"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "现在是下午一点半。会议在两小时后开始。",
+        "answer": "É uma e meia da tarde. A reunião começa daqui a duas horas."
+      }
+    },
+    {
+      "id": "exam-module-06",
+      "title": "高频不规则动词与代词式动词",
+      "theme_zh": "Fazer, Poder 与 Reflexivos",
+      "priority": "high",
+      "core_examples": [
+        {
+          "pt": "O meu irmão faz anos a 21 de setembro.",
+          "zh": "我兄弟在9月21日过生日。",
+          "focus": "fazer anos 表生日"
+        },
+        {
+          "pt": "O que é que vocês fazem logo à tarde?",
+          "zh": "你们今天下午做什么？",
+          "focus": "fazer 表做"
+        },
+        {
+          "pt": "O Noah e a Ana não podem estacionar os carros aqui.",
+          "zh": "诺亚和安娜不能把车停在这里。",
+          "focus": "poder + infinitivo"
+        },
+        {
+          "pt": "Tu sentas-te à frente e nós ocupamo-nos das pipocas.",
+          "zh": "你坐在前面，我们负责爆米花。",
+          "focus": "代词式动词的代词匹配"
+        }
+      ],
+      "grammar_points": [
+        {
+          "topic": "Fazer",
+          "forms": ["eu faço", "tu fazes", "ele faz", "nós fazemos", "eles fazem"]
+        },
+        {
+          "topic": "Poder",
+          "forms": ["eu posso", "tu podes", "ele pode", "nós podemos", "eles podem"]
+        },
+        {
+          "topic": "自反代词匹配",
+          "forms": ["eu-me", "tu-te", "ele-se", "nós-nos", "eles-se"]
+        }
+      ],
+      "teacher_drill": {
+        "task": "我们不能在这里做饭，但是我们可以去餐厅。",
+        "answer": "Nós não podemos fazer o jantar aqui, mas podemos ir ao restaurante."
+      }
+    }
+  ],
+  "review_advice": {
+    "zh": "基础阶段最核心的考点是 Ter/Ser/Estar/Ir 的变位，以及 De/Em/A 介词与定冠词的缩合。遇到介词填空，先看后面的名词阴阳性和单复数。",
+    "focus": ["Ter", "Ser", "Estar", "Ir", "de/em/a contractions", "gender and number agreement"]
+  }
+}

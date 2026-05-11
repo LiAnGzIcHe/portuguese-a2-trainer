@@ -1,0 +1,50 @@
+.translation-mask {
+  width: max-content;
+  max-width: 100%;
+  margin: 0 0 14px;
+  padding: 8px 0;
+  color: rgba(90, 102, 95, 0.72);
+  cursor: pointer;
+  filter: blur(1.8px);
+  opacity: 0.7;
+  transition: opacity 240ms ease, filter 240ms ease, color 240ms ease;
+}
+
+.translation-mask::after {
+  content: "点击查看翻译";
+  display: block;
+  margin-top: 5px;
+  color: rgba(90, 102, 95, 0.58);
+  filter: blur(0);
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.translation-mask:hover::after,
+.translation-mask:focus-visible::after {
+  opacity: 1;
+}
+
+.translation-mask.is-revealed {
+  color: var(--muted);
+  filter: blur(0);
+  opacity: 1;
+}
+
+.translation-mask.is-revealed::after {
+  content: "";
+  margin: 0;
+}
+
+.drill-line-card .translation {
+  opacity: 1;
+  filter: blur(0);
+  transition: opacity 240ms ease, filter 240ms ease, color 240ms ease;
+}
+
+.drill-line-card .translation.is-masked {
+  color: rgba(90, 102, 95, 0.56);
+  filter: blur(1.6px);
+  opacity: 0.66;
+}

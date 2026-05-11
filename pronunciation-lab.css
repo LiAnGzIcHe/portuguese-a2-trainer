@@ -1,0 +1,357 @@
+.alphabet-lab {
+  position: sticky;
+  top: 92px;
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px solid var(--ink);
+  background: rgba(255, 250, 240, 0.94);
+  box-shadow: 10px 10px 0 rgba(23, 33, 28, 0.09);
+}
+
+.reference-video {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.reference-video video {
+  display: block;
+  width: 100%;
+  max-height: 260px;
+  margin: 10px 0 8px;
+  border: 1px solid var(--line);
+  background: #111;
+}
+
+.reference-video p:not(.label) {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.lab-stage {
+  display: grid;
+  grid-template-columns: 142px 1fr;
+  gap: 14px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.lab-stage strong,
+.lab-stage span {
+  display: block;
+}
+
+.lab-stage strong {
+  font-family: var(--font-portuguese);
+  font-size: 28px;
+  line-height: 1;
+}
+
+.lab-stage span {
+  color: var(--muted);
+}
+
+.alphabet-lab p {
+  margin-bottom: 8px;
+}
+
+#labTitle {
+  color: var(--ink);
+  font-weight: 900;
+}
+
+#labHint {
+  color: var(--muted);
+  line-height: 1.62;
+}
+
+.animated-mouth {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  border: 1px solid rgba(14, 67, 82, 0.35);
+  border-radius: 44% 44% 50% 50%;
+  background:
+    radial-gradient(circle at 52% 77%, rgba(216, 93, 63, 0.14), transparent 42px),
+    linear-gradient(#ffe1ca, #f6cdb7 72%, #efbea8);
+  box-shadow: inset 0 -8px 22px rgba(91, 48, 33, 0.08), 0 10px 20px rgba(23, 33, 28, 0.1);
+  overflow: hidden;
+}
+
+.animated-mouth::before {
+  content: "";
+  position: absolute;
+  left: 59px;
+  top: 24px;
+  width: 15px;
+  height: 24px;
+  border-left: 2px solid rgba(91, 48, 33, 0.22);
+  border-bottom: 2px solid rgba(91, 48, 33, 0.22);
+  border-radius: 0 0 0 14px;
+}
+
+.animated-mouth::after {
+  content: "";
+  position: absolute;
+  left: 44px;
+  bottom: 8px;
+  width: 44px;
+  height: 10px;
+  border-bottom: 2px solid rgba(91, 48, 33, 0.18);
+  border-radius: 50%;
+}
+
+.upper-lip,
+.teeth-line,
+.tongue-line,
+.air-flow,
+.nasal-flow {
+  position: absolute;
+  display: block;
+}
+
+.upper-lip {
+  left: 31px;
+  top: 68px;
+  width: 70px;
+  height: 28px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(#e86654 0 48%, #b92f2f 49% 52%, #d94c3f 53%);
+  box-shadow: inset 0 -5px 0 rgba(114, 21, 23, 0.18);
+  transform-origin: center;
+}
+
+.upper-lip::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  width: 50px;
+  height: 12px;
+  border-radius: 999px;
+  background: #39171a;
+}
+
+.upper-lip::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 3px;
+  width: 38px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 229, 219, 0.46);
+}
+
+.teeth-line {
+  left: 43px;
+  top: 77px;
+  z-index: 3;
+  width: 46px;
+  height: 9px;
+  border-radius: 0 0 10px 10px;
+  background: repeating-linear-gradient(90deg, #fff 0 8px, #d9d0c4 8px 9px);
+  opacity: 0;
+}
+
+.tongue-line {
+  left: 47px;
+  top: 86px;
+  z-index: 2;
+  width: 38px;
+  height: 13px;
+  border: 0;
+  border-radius: 50% 50% 45% 45%;
+  background: #f08c83;
+  opacity: 0.55;
+}
+
+.air-flow {
+  right: 8px;
+  top: 75px;
+  width: 26px;
+  height: 12px;
+  border-top: 2px solid var(--azulejo);
+  border-bottom: 2px solid var(--azulejo);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.nasal-flow {
+  left: 53px;
+  top: 42px;
+  width: 26px;
+  height: 14px;
+  border-top: 3px dotted var(--azulejo);
+  opacity: 0;
+}
+
+.animated-mouth.mouth-open .upper-lip {
+  height: 42px;
+  top: 60px;
+}
+
+.animated-mouth.mouth-open .upper-lip::before {
+  height: 25px;
+}
+
+.animated-mouth.mouth-closed .upper-lip,
+.animated-mouth.mouth-closedNasal .upper-lip {
+  height: 13px;
+  top: 76px;
+}
+
+.animated-mouth.mouth-closed .upper-lip::before,
+.animated-mouth.mouth-closedNasal .upper-lip::before,
+.animated-mouth.mouth-rest .upper-lip::before {
+  height: 3px;
+  top: 5px;
+}
+
+.animated-mouth.mouth-round .upper-lip {
+  left: 48px;
+  top: 61px;
+  width: 36px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.animated-mouth.mouth-round .upper-lip::before,
+.animated-mouth.mouth-tightRound .upper-lip::before {
+  left: 9px;
+  top: 10px;
+  width: 18px;
+  height: 21px;
+  border-radius: 50%;
+}
+
+.animated-mouth.mouth-tightRound .upper-lip {
+  left: 53px;
+  top: 67px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.animated-mouth.mouth-spread .upper-lip {
+  left: 27px;
+  top: 73px;
+  width: 78px;
+  height: 16px;
+}
+
+.animated-mouth.mouth-spread .upper-lip::before {
+  left: 12px;
+  top: 6px;
+  width: 54px;
+  height: 4px;
+}
+
+.animated-mouth.mouth-teeth .teeth-line {
+  opacity: 1;
+}
+
+.animated-mouth.mouth-tip .tongue-line,
+.animated-mouth.mouth-back .tongue-line,
+.animated-mouth.mouth-split .tongue-line,
+.animated-mouth.mouth-soft .tongue-line,
+.animated-mouth.mouth-lateral .tongue-line,
+.animated-mouth.mouth-sibilant .tongue-line,
+.animated-mouth.mouth-voicedSibilant .tongue-line,
+.animated-mouth.mouth-rhotic .tongue-line {
+  opacity: 1;
+}
+
+.animated-mouth.mouth-back .tongue-line,
+.animated-mouth.mouth-split .tongue-line {
+  transform: translateX(14px) translateY(-3px);
+}
+
+.animated-mouth.mouth-sibilant .air-flow,
+.animated-mouth.mouth-voicedSibilant .air-flow,
+.animated-mouth.mouth-soft .air-flow,
+.animated-mouth.mouth-rhotic .air-flow {
+  opacity: 1;
+}
+
+.animated-mouth.mouth-closedNasal .nasal-flow,
+.animated-mouth.mouth-nasal .nasal-flow {
+  opacity: 1;
+}
+
+.animated-mouth.mouth-rest .upper-lip {
+  height: 8px;
+  top: 78px;
+  background: linear-gradient(#e6a496, #cc776e);
+}
+
+.animated-mouth.is-speaking .upper-lip {
+  animation: mouth-open-close 900ms ease-in-out 2;
+}
+
+.animated-mouth.is-speaking .tongue-line {
+  animation: tongue-lift 900ms ease-in-out 2;
+}
+
+.animated-mouth.is-speaking .air-flow {
+  animation: airflow 900ms ease-in-out 2;
+}
+
+.animated-mouth.is-speaking .nasal-flow {
+  animation: nasal-pulse 900ms ease-in-out 2;
+}
+
+@keyframes mouth-open-close {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.28);
+  }
+}
+
+@keyframes tongue-lift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes airflow {
+  0% {
+    transform: translateX(-8px);
+    opacity: 0;
+  }
+  40%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(8px);
+    opacity: 0;
+  }
+}
+
+@keyframes nasal-pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-7px);
+  }
+}
+
+@media (max-width: 900px) {
+  .alphabet-lab {
+    position: static;
+  }
+}

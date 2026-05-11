@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Português PT A2 Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="pronunciation-lab.css">
+    <link rel="stylesheet" href="rules.css">
+    <link rel="stylesheet" href="drill-ui.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#hero" aria-label="Português PT A2 Studio">
+        <span class="brand-mark">PT</span>
+        <span>
+          <strong>Português PT A2 Studio</strong>
+          <small>European Portuguese pronunciation-first trainer</small>
+        </span>
+      </a>
+      <nav aria-label="主要模块">
+        <a href="#alphabet">字母</a>
+        <a href="#sound-rules">规律</a>
+        <a href="#stress">重音</a>
+        <a href="#voice">语音</a>
+        <a href="#generator">句子</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portugal standard · A0-A2 · pronunciation on every Portuguese item</p>
+          <h1>把欧洲葡语先听清，再开口。</h1>
+          <p class="lead">
+            一个本地可打开的 A2 以下学习网页：字母发音、重音规则、欧洲葡语语音框架、短句和长句随机生成。
+          </p>
+          <div class="hero-actions">
+            <button class="primary" data-speak="Bom dia. Quero aprender português europeu devagar.">
+              <span aria-hidden="true">▶</span> 听示范
+            </button>
+            <a class="secondary" href="#generator">开始生成句子</a>
+          </div>
+        </div>
+        <div class="sound-map" aria-label="欧洲葡语语音学习路径">
+          <div class="wave-line"></div>
+          <div class="map-node active">
+            <span>1</span>
+            <strong>Letters</strong>
+            <small>nome + som</small>
+          </div>
+          <div class="map-node">
+            <span>2</span>
+            <strong>Stress</strong>
+            <small>sílaba forte</small>
+          </div>
+          <div class="map-node">
+            <span>3</span>
+            <strong>Reduction</strong>
+            <small>vogais fracas</small>
+          </div>
+          <div class="map-node">
+            <span>4</span>
+            <strong>Chunks</strong>
+            <small>frases reais</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="control-strip" aria-label="发音控制">
+        <div>
+          <p class="label">Speech engine</p>
+          <p id="voiceStatus">正在检测 pt-PT 语音...</p>
+        </div>
+        <label>
+          速度
+          <input id="rateControl" type="range" min="0.55" max="1" step="0.05" value="0.78">
+          <output id="rateValue">0.78</output>
+        </label>
+        <label>
+          语音
+          <select id="voiceSelect" aria-label="选择葡语语音"></select>
+        </label>
+      </section>
+
+      <section id="alphabet" class="section-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Módulo 1</p>
+          <h2>字母发音：先学字母名，再学词内声音</h2>
+          <p>欧洲葡语里，字母名和词内读音不是一回事。每个字母都有独立配音入口；有授权真人音频时会优先播放本地音频，否则回退到单字母名 pt-PT 系统语音。</p>
+          <aside id="pronunciationLab" class="alphabet-lab" aria-live="polite">
+            <p class="label">Mouth animation</p>
+            <div class="lab-stage">
+              <div id="labMouth" class="animated-mouth mouth-open" aria-hidden="true">
+                <span class="upper-lip"></span>
+                <span class="teeth-line"></span>
+                <span class="tongue-line"></span>
+                <span class="air-flow"></span>
+                <span class="nasal-flow"></span>
+              </div>
+              <div>
+                <strong id="labLetter">A · á</strong>
+                <span id="labSample">água</span>
+              </div>
+            </div>
+            <p id="labTitle">开口大</p>
+            <p id="labHint">下巴放低，嘴唇自然展开；像中文“啊”，但更短更干净。</p>
+            <div class="reference-video">
+              <p class="label">真人发音参考</p>
+              <video id="referenceVideo" controls preload="metadata">
+                <source src="media/european-portuguese-reference.mp4" type="video/mp4">
+              </video>
+              <p>点击字母发音后，可对照这段视频里的真人口型和节奏。</p>
+            </div>
+          </aside>
+        </div>
+        <div id="alphabetGrid" class="alphabet-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="sound-rules" class="rules-section">
+        <div class="section-heading">
+          <p class="eyebrow">Capítulos 2-5 · Pronúncia europeia</p>
+          <h2>欧洲葡语语音课程地图</h2>
+          <p>把原来的 Módulo 1.5、Módulo 2 和 Módulo 3 合并为纵向课程：每章一个板块，每个板块内部横向滚动复查，所有例词和训练句都能听 pt-PT。</p>
+        </div>
+        <div id="pronunciationChapters" class="pronunciation-chapters" aria-live="polite"></div>
+        <div id="voice" class="chapter-panel training-path-panel">
+          <div class="chapter-panel-head">
+            <div>
+              <p class="eyebrow">Treino · depois dos capítulos</p>
+              <h3>语音训练顺序：从口型到整句节奏</h3>
+              <p>先把音做准，再把词读出强弱，最后进入真实短句。不要一开始就追求语速。</p>
+            </div>
+          </div>
+          <div class="lesson-lanes">
+            <article class="training-card">
+              <span>Stage 1</span>
+              <h3>口型与元音位置</h3>
+              <p>先分清开口、闭口、圆唇和小圆唇。á/à 更开，ê/ô 更闭，u 更小更圆。</p>
+              <button data-speak="pá, pé, vê, pôr, avó, avô">听 vowel contrast</button>
+            </article>
+            <article class="training-card">
+              <span>Stage 2</span>
+              <h3>鼻化与核心辅音</h3>
+              <p>ão, em, ãe 走鼻腔，不拆成两个完整音节；lh, nh, rr 先按高频词绑定。</p>
+              <button data-speak="não, bem, mãe, pão, também">听 nasal vowels</button>
+            </article>
+            <article class="training-card">
+              <span>Stage 3</span>
+              <h3>词内强弱与 vowel reduction</h3>
+              <p>先找强音节，再把非重读 e/o/a 读轻。欧洲葡语听起来快，常因为弱音节被压缩。</p>
+              <button data-speak="filho, vinho, carro, casa, dez">听 consonants</button>
+            </article>
+            <article class="training-card">
+              <span>Stage 4</span>
+              <h3>短句节奏与礼貌语块</h3>
+              <p>把常用短句当成一个 rhythm unit：先慢速清楚，再回到正常语速。</p>
+              <button data-speak="Desculpe, pode repetir mais devagar?">听完整句</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="generator" class="generator">
+        <div class="section-heading">
+          <p class="eyebrow">Módulo 4</p>
+          <h2>Pattern Drill：情景短句高强度训练</h2>
+          <p>输入一个情景，系统优先从本地 100 句日常场景库抽取并替换。先读葡语，再点开中文翻译，保持直接反应。</p>
+        </div>
+        <div class="generator-panel">
+          <div class="segmented" role="group" aria-label="句子长度">
+            <button id="shortMode" class="selected" type="button">Pattern Drill</button>
+            <button id="longMode" type="button">长句</button>
+          </div>
+          <div id="drillInputPanel" class="drill-input-panel">
+            <label>
+              输入场景
+              <input id="drillScenario" type="text" value="在车站低调询问路线，并确认对方是否能重复一遍">
+            </label>
+          </div>
+          <div class="drill-buttons">
+            <button id="generateSentence" class="primary" type="button">根据场景生成两个短句</button>
+            <button id="generateVariant" type="button">生成替换句</button>
+          </div>
+          <article class="sentence-card">
+            <p id="sentenceLevel" class="pill">A2 · pattern drill · route check</p>
+            <h3 id="sentenceText">Desculpe, onde fica a estação? Pode repetir mais devagar? Tenho de chegar lá antes das oito.</h3>
+            <p id="sentenceZh" class="translation-mask" role="button" tabindex="0">░░░░░░░░░░░░░░░</p>
+            <p id="sentenceHint" hidden>Pattern: Desculpe, onde fica {place}? Pode repetir mais devagar? Tenho de chegar lá antes das {time}.</p>
+            <div id="drillSlots" class="drill-slots" aria-label="本轮替换槽位" hidden></div>
+            <div class="sentence-actions">
+              <button id="playSentence" type="button">▶ 正常</button>
+              <button id="playSlowSentence" type="button">◷ 慢速</button>
+            </div>
+          </article>
+          <div id="drillSentenceList" class="drill-sentence-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="reference-note">
+        <h2>第一版参考逻辑</h2>
+        <p>
+          结构参考了欧洲葡语学习产品常见做法：A1/A2 路径、慢速/正常发音、真实生活语块、IPA/重音/弱读的明确教学。
+          内容为原创教学草案，后续可以继续接入真人音频、CAPLE/CIPLE 题型与 spaced repetition。
+        </p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="pronunciation-rules.js"></script>
+    <script src="daily-sentence-bank.js"></script>
+    <script src="drill.js"></script>
+  </body>
+</html>

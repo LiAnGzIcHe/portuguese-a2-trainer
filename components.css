@@ -1,0 +1,388 @@
+.generator {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 70px);
+  padding: clamp(22px, 4vw, 42px);
+  border: 1px solid var(--ink);
+  background:
+    linear-gradient(120deg, rgba(23, 107, 122, 0.13), transparent),
+    var(--tile);
+}
+
+.generator-panel {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.drill-input-panel {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid rgba(23, 33, 28, 0.16);
+  background: rgba(255, 250, 240, 0.72);
+}
+
+.drill-input-panel label {
+  display: grid;
+  gap: 6px;
+  color: var(--azulejo-dark);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.drill-input-panel input,
+.drill-input-panel textarea {
+  width: 100%;
+  border: 1px solid rgba(23, 33, 28, 0.18);
+  border-radius: 6px;
+  padding: 10px 11px;
+  color: var(--ink);
+  background: var(--white);
+  font: inherit;
+  line-height: 1.5;
+}
+
+.drill-input-panel textarea {
+  resize: vertical;
+}
+
+.drill-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.drill-slots span {
+  border: 1px solid rgba(23, 107, 122, 0.22);
+  border-radius: 999px;
+  padding: 6px 9px;
+  background: rgba(23, 107, 122, 0.08);
+  color: var(--azulejo-dark);
+  font-size: 12px;
+}
+
+.drill-slots {
+  margin-bottom: 14px;
+}
+
+.drill-buttons {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  gap: 10px;
+}
+
+.drill-buttons button {
+  width: 100%;
+}
+
+#generateVariant {
+  color: var(--ink);
+  background: rgba(180, 201, 73, 0.22);
+  font-weight: 800;
+}
+
+.drill-sentence-list {
+  display: grid;
+  gap: 10px;
+}
+
+.drill-line-card {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(23, 33, 28, 0.13);
+  background: transparent;
+  cursor: pointer;
+}
+
+.drill-line-card span {
+  color: var(--coral);
+  font-weight: 900;
+}
+
+.drill-line-card p {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-portuguese);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.drill-line-card .translation {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.drill-mini-actions {
+  display: grid;
+  grid-template-columns: 40px 40px;
+  gap: 6px;
+}
+
+.drill-mini-actions button {
+  min-height: 36px;
+  padding: 0;
+  color: var(--ink);
+  background: rgba(255, 250, 240, 0.72);
+  font-weight: 900;
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.segmented button {
+  border-color: transparent;
+  background: transparent;
+  font-weight: 800;
+}
+
+.segmented .selected {
+  color: var(--white);
+  background: var(--azulejo);
+}
+
+.sentence-card h3 {
+  margin: 10px 0 12px;
+  font-family: var(--font-portuguese);
+  font-size: clamp(25px, 3.4vw, 44px);
+  line-height: 1.14;
+  font-variation-settings: "SOFT" 40, "WONK" 1;
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 9px;
+  border: 1px solid var(--azulejo);
+  border-radius: 999px;
+  background: rgba(180, 201, 73, 0.16);
+}
+
+.mouth-compare {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 10px;
+  align-items: center;
+  min-height: 92px;
+  margin: 4px 0;
+  padding: 10px;
+  border: 1px solid rgba(23, 33, 28, 0.12);
+  background: rgba(23, 107, 122, 0.06);
+}
+
+.mouth-compare b,
+.mouth-compare small {
+  display: block;
+}
+
+.mouth-compare b {
+  font-size: 13px;
+}
+
+.mouth-compare small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.mouth-icon {
+  position: relative;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid var(--azulejo-dark);
+  border-radius: 50%;
+  background: var(--white);
+}
+
+.mouth-icon::before,
+.mouth-icon::after,
+.mouth-icon i {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.mouth-icon::before {
+  width: 26px;
+  height: 13px;
+  border: 2px solid var(--coral);
+  border-radius: 50%;
+}
+
+.mouth-icon::after {
+  width: 18px;
+  height: 2px;
+  background: var(--azulejo-dark);
+}
+
+.mouth-open::before {
+  height: 23px;
+}
+
+.mouth-closed::before,
+.mouth-closedNasal::before {
+  height: 5px;
+}
+
+.mouth-closedNasal i,
+.mouth-nasal i {
+  width: 12px;
+  height: 12px;
+  top: 2px;
+  border-top: 2px dotted var(--azulejo);
+}
+
+.mouth-round::before,
+.mouth-tightRound::before {
+  width: 18px;
+  height: 18px;
+}
+
+.mouth-tightRound::before {
+  width: 13px;
+  height: 13px;
+}
+
+.mouth-spread::before {
+  width: 30px;
+  height: 8px;
+}
+
+.mouth-teeth::after {
+  width: 24px;
+  height: 6px;
+  top: 14px;
+  background: repeating-linear-gradient(90deg, var(--azulejo-dark) 0 2px, transparent 2px 5px);
+}
+
+.mouth-tip i,
+.mouth-back i,
+.mouth-split i,
+.mouth-soft i,
+.mouth-lateral i,
+.mouth-sibilant i,
+.mouth-voicedSibilant i,
+.mouth-rhotic i {
+  width: 18px;
+  height: 9px;
+  bottom: 11px;
+  border-bottom: 3px solid var(--azulejo);
+  border-radius: 50%;
+}
+
+.mouth-back i,
+.mouth-split i {
+  transform: translateX(5px);
+}
+
+.mouth-sibilant::after,
+.mouth-voicedSibilant::after {
+  width: 24px;
+  height: 1px;
+}
+
+.mouth-rest::before {
+  border-color: var(--line);
+}
+
+.letter-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.mouth-demo-button {
+  grid-column: 1 / -1;
+}
+
+.letter-actions button {
+  min-height: 40px;
+}
+
+.mouth-demo-button {
+  background: rgba(180, 201, 73, 0.18);
+}
+
+.reference-note {
+  max-width: 1040px;
+  padding: 24px;
+}
+
+.reference-note p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .topbar,
+  .hero,
+  .control-strip,
+  .section-grid,
+  .generator {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .sound-map {
+    min-height: 430px;
+  }
+
+  .rule-board,
+  .lesson-lanes {
+    grid-template-columns: 1fr;
+  }
+
+  .alphabet-lab {
+    position: static;
+  }
+
+  .drill-buttons,
+  .drill-line-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .topbar {
+    position: static;
+  }
+
+  .brand small {
+    display: none;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+
+  .map-node,
+  .map-node:nth-child(3),
+  .map-node:nth-child(5) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
