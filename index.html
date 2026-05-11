@@ -22,27 +22,28 @@
         </span>
       </a>
       <nav aria-label="主要模块">
-        <a href="#alphabet">字母</a>
-        <a href="#sound-rules">规律</a>
-        <a href="#stress">重音</a>
-        <a href="#voice">语音</a>
-        <a href="#generator">句子</a>
+        <a href="#alphabet" data-i18n="nav.alphabet">字母</a>
+        <a href="#sound-rules" data-i18n="nav.rules">规律</a>
+        <a href="#stress" data-i18n="nav.stress">重音</a>
+        <a href="#voice" data-i18n="nav.voice">语音</a>
+        <a href="#generator" data-i18n="nav.sentences">句子</a>
+        <button id="languageToggle" class="language-toggle" type="button">EN</button>
       </nav>
     </header>
 
     <main>
       <section id="hero" class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Portugal standard · A0-A2 · pronunciation on every Portuguese item</p>
-          <h1>把欧洲葡语先听清，再开口。</h1>
-          <p class="lead">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Portugal standard · A0-A2 · pronunciation on every Portuguese item</p>
+          <h1 data-i18n="hero.title">把欧洲葡语先听清，再开口。</h1>
+          <p class="lead" data-i18n="hero.lead">
             一个本地可打开的 A2 以下学习网页：字母发音、重音规则、欧洲葡语语音框架、短句和长句随机生成。
           </p>
           <div class="hero-actions">
             <button class="primary" data-speak="Bom dia. Quero aprender português europeu devagar.">
-              <span aria-hidden="true">▶</span> 听示范
+              <span aria-hidden="true">▶</span> <span data-i18n="hero.demo">听示范</span>
             </button>
-            <a class="secondary" href="#generator">开始生成句子</a>
+            <a class="secondary" href="#generator" data-i18n="hero.start">开始生成句子</a>
           </div>
         </div>
         <div class="sound-map" aria-label="欧洲葡语语音学习路径">
@@ -89,8 +90,8 @@
       <section id="alphabet" class="section-grid">
         <div class="section-heading">
           <p class="eyebrow">Módulo 1</p>
-          <h2>字母发音：先学字母名，再学词内声音</h2>
-          <p>欧洲葡语里，字母名和词内读音不是一回事。每个字母都有独立配音入口；有授权真人音频时会优先播放本地音频，否则回退到单字母名 pt-PT 系统语音。</p>
+          <h2 data-i18n="alphabet.title">字母发音：先学字母名，再学词内声音</h2>
+          <p data-i18n="alphabet.copy">欧洲葡语里，字母名和词内读音不是一回事。每个字母都有独立配音入口；有授权真人音频时会优先播放本地音频，否则回退到单字母名 pt-PT 系统语音。</p>
           <aside id="pronunciationLab" class="alphabet-lab" aria-live="polite">
             <p class="label">Mouth animation</p>
             <div class="lab-stage">
@@ -123,8 +124,8 @@
       <section id="sound-rules" class="rules-section">
         <div class="section-heading">
           <p class="eyebrow">Capítulos 2-5 · Pronúncia europeia</p>
-          <h2>欧洲葡语语音课程地图</h2>
-          <p>把原来的 Módulo 1.5、Módulo 2 和 Módulo 3 合并为纵向课程：每章一个板块，每个板块内部横向滚动复查，所有例词和训练句都能听 pt-PT。</p>
+          <h2 data-i18n="rules.title">欧洲葡语语音课程地图</h2>
+          <p data-i18n="rules.copy">把原来的 Módulo 1.5、Módulo 2 和 Módulo 3 合并为纵向课程：每章一个板块，每个板块内部横向滚动复查，所有例词和训练句都能听 pt-PT。</p>
         </div>
         <div id="pronunciationChapters" class="pronunciation-chapters" aria-live="polite"></div>
         <div id="voice" class="chapter-panel training-path-panel">
@@ -167,33 +168,29 @@
       <section id="generator" class="generator">
         <div class="section-heading">
           <p class="eyebrow">Módulo 4</p>
-          <h2>Pattern Drill：情景短句高强度训练</h2>
-          <p>输入一个情景，系统优先从本地 100 句日常场景库抽取并替换。先读葡语，再点开中文翻译，保持直接反应。</p>
+          <h2 data-i18n="drill.title">Pattern Drill：结构替换训练</h2>
+          <p data-i18n="drill.copy">输入场景，先得到一个可复用句型。切换例句换结构；替换词只换主语、地点或名词。</p>
         </div>
         <div class="generator-panel">
-          <div class="segmented" role="group" aria-label="句子长度">
-            <button id="shortMode" class="selected" type="button">Pattern Drill</button>
-            <button id="longMode" type="button">长句</button>
-          </div>
           <div id="drillInputPanel" class="drill-input-panel">
             <label>
-              输入场景
-              <input id="drillScenario" type="text" value="在车站低调询问路线，并确认对方是否能重复一遍">
+              <span data-i18n="drill.input">输入场景</span>
+              <input id="drillScenario" type="text" value="我从家坐公交车去学校">
             </label>
           </div>
           <div class="drill-buttons">
-            <button id="generateSentence" class="primary" type="button">根据场景生成两个短句</button>
-            <button id="generateVariant" type="button">生成替换句</button>
+            <button id="generateSentence" class="primary" type="button" data-i18n="drill.switch">切换例句</button>
+            <button id="generateVariant" type="button" data-i18n="drill.replace">替换词</button>
           </div>
           <article class="sentence-card">
-            <p id="sentenceLevel" class="pill">A2 · pattern drill · route check</p>
-            <h3 id="sentenceText">Desculpe, onde fica a estação? Pode repetir mais devagar? Tenho de chegar lá antes das oito.</h3>
+            <p id="sentenceLevel" class="pill">A1-A2 · structure drill</p>
+            <h3 id="sentenceText">Vou de autocarro para a universidade.</h3>
             <p id="sentenceZh" class="translation-mask" role="button" tabindex="0">░░░░░░░░░░░░░░░</p>
-            <p id="sentenceHint" hidden>Pattern: Desculpe, onde fica {place}? Pode repetir mais devagar? Tenho de chegar lá antes das {time}.</p>
+            <p id="sentenceHint" hidden>Vou de {transport} para {place}.</p>
             <div id="drillSlots" class="drill-slots" aria-label="本轮替换槽位" hidden></div>
             <div class="sentence-actions">
-              <button id="playSentence" type="button">▶ 正常</button>
-              <button id="playSlowSentence" type="button">◷ 慢速</button>
+              <button id="playSentence" type="button" data-i18n="drill.play">▶ 读</button>
+              <button id="playSlowSentence" type="button" data-i18n="drill.slow">◷ 慢速</button>
             </div>
           </article>
           <div id="drillSentenceList" class="drill-sentence-list" aria-live="polite"></div>
@@ -209,6 +206,7 @@
       </section>
     </main>
 
+    <script src="language.js"></script>
     <script src="app.js"></script>
     <script src="pronunciation-rules.js"></script>
     <script src="daily-sentence-bank.js"></script>
