@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story Listening · Português PT A2 Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="story-listening.css">
+    <link rel="stylesheet" href="story-listening-mobile.css">
+  </head>
+  <body class="story-page">
+    <header class="story-topbar">
+      <a class="brand" href="index.html" aria-label="返回主页">
+        <span class="brand-mark">PT</span>
+        <span>
+          <strong>Story Listening</strong>
+          <small>逐句精听 · 复述 · 语法回收</small>
+        </span>
+      </a>
+      <nav aria-label="故事精听导航">
+        <a href="index.html#generator">Pattern Drill</a>
+        <a href="#storyLibrary">Stories</a>
+        <a href="#reflectionRecorder">Recording</a>
+      </nav>
+    </header>
+
+    <main class="story-shell">
+      <section class="story-hero">
+        <div>
+          <p class="eyebrow">Módulo 5 · Intensive Listening</p>
+          <h1>把小故事听成句子反应。</h1>
+        </div>
+        <div class="story-voice-card">
+          <p class="label">pt-PT voice</p>
+          <p id="storyVoiceStatus">正在检测欧洲葡萄牙语语音...</p>
+          <label>
+            速度
+            <input id="storyRate" type="range" min="0.55" max="1" step="0.05" value="0.78">
+            <output id="storyRateValue">0.78</output>
+          </label>
+          <select id="storyVoiceSelect" aria-label="选择欧洲葡萄牙语语音"></select>
+        </div>
+      </section>
+
+      <section id="storyLibrary" class="story-workspace">
+        <aside class="story-rail" aria-label="故事列表">
+          <p class="label">Library</p>
+          <div id="storyTabs" class="story-tabs"></div>
+          <button id="playFullStory" type="button" class="quiet-button">连续朗读</button>
+        </aside>
+
+        <section class="story-reader" aria-live="polite">
+          <div class="story-reader-head">
+            <div>
+              <p id="storyScope" class="eyebrow">Unidades</p>
+              <h2 id="storyTitle">Story</h2>
+              <p id="storyTheme"></p>
+            </div>
+            <div class="story-stepper">
+              <button id="prevLine" type="button" aria-label="上一句">←</button>
+              <span id="lineCounter">1 / 1</span>
+              <button id="nextLine" type="button" aria-label="下一句">→</button>
+            </div>
+          </div>
+
+          <article id="activeLineCard" class="active-line-card">
+            <p id="activeSpeaker" class="label">Speaker</p>
+            <p id="activePt" class="active-pt"></p>
+            <button id="activeTranslation" class="translation-reveal" type="button">
+              <span class="mask-bar"></span>
+              <span class="translation-text"></span>
+              <small>点击查看中文</small>
+            </button>
+            <div class="listen-actions">
+              <button id="playLine" type="button">播放本句</button>
+              <button id="playLineSlow" type="button">慢速</button>
+              <button id="repeatLine" type="button">循环 3 次</button>
+            </div>
+          </article>
+
+          <div id="lineList" class="line-list"></div>
+        </section>
+      </section>
+
+      <section class="study-grid">
+        <article>
+          <p class="label">Grammar</p>
+          <h2>故事后的语法回收</h2>
+          <div id="grammarSummary" class="summary-list"></div>
+        </article>
+        <article>
+          <p class="label">Vocabulary</p>
+          <h2>单词与高频短语</h2>
+          <div id="vocabularySummary" class="vocab-cloud"></div>
+        </article>
+        <article>
+          <p class="label">Practice</p>
+          <h2>举一反三</h2>
+          <div id="practiceSummary" class="practice-list"></div>
+        </article>
+      </section>
+
+      <section id="reflectionRecorder" class="recorder-panel">
+        <div>
+          <p class="eyebrow">Speak Back</p>
+          <h2>录下你的复述或想法</h2>
+          <p>录音只保存在当前浏览器内存中，不上传。适合听完一句后立刻复述，或者用中文/葡语说出理解。</p>
+        </div>
+        <div class="recorder-box">
+          <textarea id="reflectionNote" rows="4" placeholder="听完后写一句提示，例如：这一句我想练 de onde / onde fica。"></textarea>
+          <div class="recorder-actions">
+            <button id="startRecording" type="button">开始录音</button>
+            <button id="stopRecording" type="button" disabled>停止</button>
+          </div>
+          <p id="recordingStatus">尚未录音</p>
+          <audio id="recordingPlayback" controls hidden></audio>
+        </div>
+      </section>
+
+      <section class="content-pipeline">
+        <div>
+          <p class="eyebrow">Next Content</p>
+          <h2>后续扩展：导入短新闻或独立文段</h2>
+        </div>
+        <div class="pipeline-card">
+          <p>下一步可以加入一个“文段导入器”：粘贴 A1-A2 难度的短新闻或生活文段，系统自动切句，沿用逐句朗读、翻译遮盖、录音复述这套核心功能。</p>
+          <textarea id="customTextInput" rows="5" placeholder="以后可在这里粘贴新的 pt-PT 文段，自动生成精听材料。"></textarea>
+          <button id="previewCustomText" type="button">本地预览切句</button>
+          <div id="customPreview" class="custom-preview"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="story-listening.js"></script>
+  </body>
+</html>
