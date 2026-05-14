@@ -700,6 +700,139 @@
       }
     }
   ],
+  "story_modules": [
+    {
+      "id": "story-module-01-04",
+      "title": "Na Sala de Aula",
+      "scope": "Unidades 1-4",
+      "theme_zh": "在教室里：自我介绍、来源、语言、教室物品与颜色",
+      "dialogue": [
+        { "speaker": "João", "pt": "Olá! Bom dia! Como te chamas?", "zh": "你好！早上好！你叫什么名字？" },
+        { "speaker": "Liang", "pt": "Bom dia. Chamo-me Liang. Sou da China. E tu? De onde és?", "zh": "早上好。我叫Liang。我来自中国。你呢？你来自哪里？" },
+        { "speaker": "João", "pt": "Eu sou o João. Sou de Portugal. Falo português, inglês e um pouco de espanhol. Que línguas falas?", "zh": "我是若昂。我来自葡萄牙。我说葡萄牙语、英语和一点西班牙语。你说什么语言？" },
+        { "speaker": "Liang", "pt": "Falo chinês e um pouco de português. Onde fica a tua casa?", "zh": "我说中文和一点葡萄牙语。你的家在哪里？" },
+        { "speaker": "João", "pt": "A minha casa fica em Lisboa. Agora, estamos na sala de aula. Liang, o que é isso aí na tua mão?", "zh": "我的家在里斯本。现在我们在教室里。Liang，你那儿手里拿的是什么？" },
+        { "speaker": "Liang", "pt": "Isto aqui é um dicionário chinês-português. É muito bom. Como se diz \"desk\" em português?", "zh": "我这儿拿的是一本汉葡词典。它非常好。葡萄牙语里的“desk”怎么说？" },
+        { "speaker": "João", "pt": "Diz-se \"secretária\". E aquilo ali é um quadro.", "zh": "叫“secretária”。远处那边那个是一块黑板。" },
+        { "speaker": "Liang", "pt": "A secretária é castanha e a parede é branca. Onde estão os livros?", "zh": "办公桌是棕色的，墙是白色的。书都在哪里？" },
+        { "speaker": "João", "pt": "Os livros estão na mesa. Eles são verdes e vermelhos.", "zh": "书都在桌子上。它们是绿色和红色的。" },
+        { "speaker": "Liang", "pt": "Obrigado! Até amanhã!", "zh": "谢谢！明天见！" },
+        { "speaker": "João", "pt": "Até à próxima!", "zh": "下次见！" }
+      ],
+      "grammar_points": [
+        { "topic": "Presente do Indicativo", "forms": ["ser: sou, és, é, somos, são", "estar: estou, estás, está, estamos, estão", "chamar-se: chamo-me, chamas-te, chama-se, chamamo-nos, chamam-se", "falar: falo, falas, fala, falamos, falam"] },
+        { "topic": "Contrações", "forms": ["de + o/a/os/as = do, da, dos, das", "em + o/a/os/as = no, na, nos, nas", "de + um/uma = dum/duma", "em + um/uma = num/numa"] },
+        { "topic": "Demonstrativos", "forms": ["isto + aqui", "isso + aí", "aquilo + ali/lá"] },
+        { "topic": "Género e número", "examples": ["A secretária é castanha.", "Os livros são verdes."] }
+      ],
+      "vocabulary": {
+        "saudacoes": ["Olá", "Bom dia", "Muito prazer", "Até amanhã", "Até à próxima", "Como se diz... em português?"],
+        "interrogativos": ["Como", "Quem", "O que", "De onde", "Onde"],
+        "sala": ["dicionário", "livro", "jornal", "mapa", "mesa", "secretária", "cadeira", "parede", "porta", "janela", "quadro"],
+        "cores": ["branco/branca", "preto/preta", "verde", "azul", "vermelho/vermelha", "castanho/castanha"]
+      },
+      "practice": [
+        { "task": "O João é ____ (de+o) Brasil, ele é ____.", "answer": "do / brasileiro" },
+        { "task": "Nós estamos ____ (em+a) Alemanha agora.", "answer": "na" },
+        { "task": "A Joana é ____ Lisboa, mas mora ____ (em+o) Porto.", "answer": "de / no" },
+        { "task": "A: O que é ____ aí? B: ____ aqui é uma caneta.", "answer": "isso / Isto" },
+        { "task": "Como se diz \"book\" em português?", "answer": "livro" },
+        { "task": "O que é ____ ali?", "answer": "aquilo" }
+      ]
+    },
+    {
+      "id": "story-module-05-08",
+      "title": "Uma Nova Colega",
+      "scope": "Unidades 5-8",
+      "theme_zh": "一位新同事：物品、职业、城市与工作",
+      "dialogue": [
+        { "speaker": "Pedro", "pt": "Olá, Sara! Onde está a tua carteira? Tens aqui a carta de condução?", "zh": "你好，萨拉！你的钱包在哪？你这里有驾照吗？" },
+        { "speaker": "Sara", "pt": "Não tenho. A minha carteira está ali, no meu carro. Mas tenho nesta mala o meu telemóvel. E tu, qual é a tua profissão?", "zh": "我没有。我的钱包在那边，在我的车里。但我的手机在这个包里。你呢，你的职业是什么？" },
+        { "speaker": "Pedro", "pt": "Sou médico. Trabalho num hospital. É no terceiro andar. Gosto muito do meu trabalho. E tu?", "zh": "我是医生。我在一家医院工作。在三楼。我非常喜欢我的工作。你呢？" },
+        { "speaker": "Sara", "pt": "Eu sou secretária. Trabalho numa empresa no centro da cidade. Gostas da tua cidade?", "zh": "我是秘书。我在市中心的一家公司工作。你喜欢你的城市吗？" },
+        { "speaker": "Pedro", "pt": "Gosto! A cidade é muito bonita, mas trabalho muitas horas por dia. E tu, ganhas bem?", "zh": "喜欢！城市很漂亮，但我每天工作很多个小时。你呢，你赚得多吗？" },
+        { "speaker": "Sara", "pt": "Infelizmente, ganho pouco dinheiro.", "zh": "很遗憾，我赚的钱很少。" }
+      ],
+      "grammar_points": [
+        { "topic": "Ter", "forms": ["tenho", "tens", "tem", "temos", "têm"] },
+        { "topic": "Contrações com artigo indefinido", "forms": ["em + um = num", "em + uma = numa", "de + um = dum"] },
+        { "topic": "Gostar de", "examples": ["Gosto do meu trabalho.", "Gosto da minha cidade."] },
+        { "topic": "Muito / pouco", "examples": ["trabalho muito", "muitas horas", "pouco dinheiro"] },
+        { "topic": "Ordinais", "forms": ["primeiro", "segundo", "terceiro", "quarto"] }
+      ],
+      "vocabulary": {
+        "objetos": ["carteira", "carta de condução", "chaves", "telemóvel"],
+        "profissoes_lugares": ["médico", "secretária", "hospital", "empresa", "escritório"]
+      },
+      "practice": [
+        { "task": "A Ana trabalha ____ (em+uma) loja. Ela ganha ____ dinheiro.", "answer": "numa / pouco" },
+        { "task": "Gosto ____ (de+os) meus colegas. O escritório deles fica no ____ andar.", "answer": "dos / quarto" }
+      ]
+    },
+    {
+      "id": "story-module-09-12",
+      "title": "Fim de Semana",
+      "scope": "Unidades 9-12",
+      "theme_zh": "周末时光：家庭、外貌状态与休闲",
+      "dialogue": [
+        { "speaker": "Marta", "pt": "Olá, Nuno! Quem são estas pessoas na fotografia?", "zh": "你好，努诺！照片里这些人是谁？" },
+        { "speaker": "Nuno", "pt": "São os nossos pais. O meu pai é alto e tem olhos azuis. A minha mãe é magra e tem cabelo curto.", "zh": "是我们的父母。我爸爸很高，有蓝色的眼睛。我妈妈很瘦，留着短发。" },
+        { "speaker": "Marta", "pt": "Eles são simpáticos, não são?", "zh": "他们很亲切，不是吗？" },
+        { "speaker": "Nuno", "pt": "Sim, muito. Mas hoje o meu pai está doente e a minha mãe está com sono.", "zh": "是的，非常。但是今天我爸爸病了，我妈妈困了。" },
+        { "speaker": "Marta", "pt": "Que pena! Eles não vão ao cinema connosco, pois não?", "zh": "真遗憾！他们不和我们一起去电影院了，对吧？" },
+        { "speaker": "Nuno", "pt": "Não. Nós vemos muitos filmes, mas hoje eles leem jornais em casa.", "zh": "不去。我们看很多电影，但今天他们在家读报纸。" },
+        { "speaker": "Marta", "pt": "Então, tu vais à praia comigo?", "zh": "那么，你和我去海滩吗？" },
+        { "speaker": "Nuno", "pt": "Vou! Adoro ir à praia.", "zh": "去！我非常喜欢去海滩。" }
+      ],
+      "grammar_points": [
+        { "topic": "Ver / Ler", "forms": ["ver: vejo, vês, vê, vemos, veem", "ler: leio, lês, lê, lemos, leem"] },
+        { "topic": "Ser vs Estar", "examples": ["é alto", "é magra", "está doente", "está com sono"] },
+        { "topic": "Ir + a", "examples": ["ir ao cinema", "ir à praia", "ir às compras", "ir a uma discoteca"] },
+        { "topic": "Confirmação", "examples": ["não é?", "não são?", "pois não?"] }
+      ],
+      "vocabulary": {
+        "familia": ["pais", "mãe", "pai", "irmão", "avós"],
+        "aparencia_estado": ["alto", "magro", "careca", "com sono", "com fome"],
+        "lazer": ["cinema", "praia", "compras"]
+      },
+      "practice": [
+        { "task": "O João ____ moreno, mas hoje ele ____ com febre.", "answer": "é / está" },
+        { "task": "Vocês não ____ ____ restaurante, ____ ____?", "answer": "vão / ao / pois não" }
+      ]
+    },
+    {
+      "id": "story-module-13-16",
+      "title": "Um Jantar Especial",
+      "scope": "Unidades 13-16",
+      "theme_zh": "特别晚餐：时间、作息、健康与餐厅点餐",
+      "dialogue": [
+        { "speaker": "Vasco", "pt": "Olá, Inês! Que horas são?", "zh": "你好，伊内丝！几点了？" },
+        { "speaker": "Inês", "pt": "São oito horas da noite. O nosso jantar é daqui a trinta minutos.", "zh": "晚上八点。我们的晚餐在30分钟后。" },
+        { "speaker": "Vasco", "pt": "Ótimo! Hoje faço anos. E no fim de semana, a que horas te levantas?", "zh": "太棒了！今天我过生日。周末你几点起床？" },
+        { "speaker": "Inês", "pt": "Levanto-me sempre às nove. Tomo banho, visto-me e depois bebo café. E tu?", "zh": "我总是9点起床。洗澡，穿衣服，然后喝咖啡。你呢？" },
+        { "speaker": "Vasco", "pt": "Eu durmo muito. Bem, podemos entrar no restaurante agora?", "zh": "我睡得很多。好吧，我们现在能进餐厅了吗？" },
+        { "speaker": "Inês", "pt": "Sim, claro. O que é que queres comer?", "zh": "当然可以。你想吃什么？" },
+        { "speaker": "Vasco", "pt": "Eu sei que eles fazem um peixe grelhado muito bom.", "zh": "我知道他们做的烤鱼非常棒。" },
+        { "speaker": "Inês", "pt": "Desculpe, pode trazer a ementa? Queria meia dose de peixe. E onde pomos os casacos?", "zh": "打扰一下，能拿菜单来吗？我想要半份鱼。我们把外套放哪？" },
+        { "speaker": "Vasco", "pt": "Pomos na cadeira.", "zh": "放在椅子上。" }
+      ],
+      "grammar_points": [
+        { "topic": "Irregulares", "forms": ["fazer: faço, fazes, faz, fazemos, fazem", "poder: posso, podes, pode, podemos, podem", "pôr: ponho, pões, põe, pomos, põem", "querer: quero, queres, quer, queremos, querem", "saber: sei, sabes, sabe, sabemos, sabem"] },
+        { "topic": "-er / -ir", "examples": ["bebo, bebes", "durmo, dormes"] },
+        { "topic": "Reflexivos", "examples": ["levanto-me", "levantas-te", "levanta-se"] },
+        { "topic": "Tempo", "examples": ["às nove", "daqui a dez minutos"] }
+      ],
+      "vocabulary": {
+        "tempo": ["hora", "minuto", "de manhã", "da noite"],
+        "rotina": ["levantar-se", "tomar banho", "deitar-se"],
+        "restaurante": ["ementa", "peixe", "carne", "grelhado", "queria"]
+      },
+      "practice": [
+        { "task": "Eu não ____ beber leite. Onde ____ a minha mala?", "answer": "posso / ponho" },
+        { "task": "Eu ____ ____ 8h00. A aula começa ____ 10 minutos.", "answer": "levanto-me / às / daqui a" }
+      ]
+    }
+  ],
   "review_advice": {
     "zh": "基础阶段最核心的考点是 Ter/Ser/Estar/Ir 的变位，以及 De/Em/A 介词与定冠词的缩合。遇到介词填空，先看后面的名词阴阳性和单复数。",
     "focus": ["Ter", "Ser", "Estar", "Ir", "de/em/a contractions", "gender and number agreement"]
