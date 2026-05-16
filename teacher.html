@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teacher Portuguese · Português PT A2 Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="teacher.css">
+  </head>
+  <body class="teacher-page">
+    <header class="teacher-topbar">
+      <a class="brand" href="index.html" aria-label="返回主页">
+        <span class="brand-mark">PT</span>
+        <span>
+          <strong>Teacher Portuguese</strong>
+          <small>课堂用语 · 逐句精听 · 每日训练</small>
+        </span>
+      </a>
+      <nav aria-label="课堂用语导航">
+        <a href="stories.html">Stories</a>
+        <a href="#phraseBank">Phrase Bank</a>
+        <a href="#patternBuilder">Patterns</a>
+        <a href="#teacherRecorder">Recording</a>
+      </nav>
+    </header>
+
+    <main class="teacher-shell">
+      <section class="teacher-hero">
+        <div>
+          <p class="eyebrow">Aula Listening Lab</p>
+          <h1>每天听懂一点老师的话。</h1>
+        </div>
+        <div class="teacher-voice-card">
+          <p class="label">pt-PT voice</p>
+          <p id="teacherVoiceStatus">正在检测欧洲葡萄牙语语音...</p>
+          <label>
+            速度
+            <input id="teacherRate" type="range" min="0.55" max="1" step="0.05" value="0.78">
+            <output id="teacherRateValue">0.78</output>
+          </label>
+          <select id="teacherVoiceSelect" aria-label="选择欧洲葡萄牙语语音"></select>
+        </div>
+      </section>
+
+      <section class="daily-panel">
+        <div>
+          <p class="label">Daily Drill</p>
+          <h2>今日 8 句</h2>
+        </div>
+        <div class="daily-actions">
+          <button id="refreshDaily" type="button">换一组</button>
+          <button id="playDaily" type="button">连续朗读</button>
+        </div>
+        <div id="dailyList" class="daily-list"></div>
+      </section>
+
+      <section id="phraseBank" class="teacher-workspace">
+        <aside class="teacher-rail">
+          <p class="label">Scenarios</p>
+          <div id="teacherCategories" class="teacher-categories"></div>
+        </aside>
+
+        <section class="teacher-reader">
+          <div class="teacher-reader-head">
+            <div>
+              <p id="categoryTitlePt" class="eyebrow">Gestão da aula</p>
+              <h2 id="categoryTitleZh">课堂管理</h2>
+              <p id="categoryGoal"></p>
+            </div>
+            <div class="teacher-stepper">
+              <button id="prevPhrase" type="button" aria-label="上一句">←</button>
+              <span id="phraseCounter">1 / 1</span>
+              <button id="nextPhrase" type="button" aria-label="下一句">→</button>
+            </div>
+          </div>
+
+          <article class="teacher-active-card">
+            <p id="phrasePattern" class="label">Vamos + infinitivo</p>
+            <p id="activeTeacherPt" class="teacher-pt"></p>
+            <button id="teacherTranslation" class="teacher-translation" type="button">
+              <span class="mask-bar"></span>
+              <span class="translation-text"></span>
+              <small>点击查看中文</small>
+            </button>
+            <div class="teacher-listen-actions">
+              <button id="playTeacherPhrase" type="button">播放</button>
+              <button id="playTeacherSlow" type="button">慢速</button>
+              <button id="repeatTeacherPhrase" type="button">循环 3 次</button>
+              <button id="markKnown" type="button">听懂</button>
+              <button id="markReview" type="button">复习</button>
+            </div>
+          </article>
+
+          <div id="phraseList" class="phrase-list"></div>
+        </section>
+      </section>
+
+      <section id="patternBuilder" class="pattern-panel">
+        <div>
+          <p class="eyebrow">Pattern Builder</p>
+          <h2>用老师句型组成新句子</h2>
+          <p>基于课堂真实高频结构，只替换动词、地点、名词，让你听到结构就能反应。</p>
+        </div>
+        <div class="pattern-box">
+          <select id="patternSelect" aria-label="选择课堂句型"></select>
+          <p id="patternSentence" class="pattern-sentence"></p>
+          <p id="patternMeaning"></p>
+          <div class="teacher-listen-actions">
+            <button id="buildVariant" type="button">替换词</button>
+            <button id="playPattern" type="button">播放</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="teacherRecorder" class="teacher-recorder">
+        <div>
+          <p class="eyebrow">Speak Back</p>
+          <h2>录下你的跟读或课堂反应</h2>
+          <p>适合练“听一句，跟一句”。录音只存在本机浏览器内存，不上传。</p>
+        </div>
+        <div class="recorder-box">
+          <textarea id="teacherNote" rows="4" placeholder="例如：今天重点听懂 Vamos / Vou repetir / No texto..."></textarea>
+          <div class="recorder-actions">
+            <button id="startTeacherRecording" type="button">开始录音</button>
+            <button id="stopTeacherRecording" type="button" disabled>停止</button>
+          </div>
+          <p id="teacherRecordingStatus">尚未录音</p>
+          <audio id="teacherRecordingPlayback" controls hidden></audio>
+        </div>
+      </section>
+
+      <section class="transcript-lab">
+        <div>
+          <p class="eyebrow">Transcript Pipeline</p>
+          <h2>以后粘贴课堂转录，先清洗再入库</h2>
+        </div>
+        <div class="transcript-box">
+          <textarea id="rawTranscript" rows="6" placeholder="粘贴老师课堂转录。第一步只做切句和候选提取，不直接进入学习库。"></textarea>
+          <button id="previewTranscript" type="button">提取候选句</button>
+          <div id="transcriptPreview" class="transcript-preview"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="teacher.js"></script>
+  </body>
+</html>
