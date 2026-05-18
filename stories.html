@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="story-listening.css">
+    <link rel="stylesheet" href="story-drill.css">
     <link rel="stylesheet" href="story-listening-mobile.css">
   </head>
   <body class="story-page">
@@ -16,10 +17,10 @@
         <span class="brand-mark">PT</span>
         <span>
           <strong>Story Listening</strong>
-          <small>逐句精听 · 复述 · 语法回收</small>
+          <small>听力 · Transcript · Drill · Guide</small>
         </span>
       </a>
-      <nav aria-label="故事精听导航">
+      <nav aria-label="故事听力导航">
         <a href="index.html#generator">Pattern Drill</a>
         <a href="#storyLibrary">Stories</a>
         <a href="#reflectionRecorder">Recording</a>
@@ -30,7 +31,7 @@
       <section class="story-hero">
         <div>
           <p class="eyebrow">Módulo 5 · Intensive Listening</p>
-          <h1>把小故事听成句子反应。</h1>
+          <h1>先听，再确认。</h1>
         </div>
         <div class="story-voice-card">
           <p class="label">pt-PT voice</p>
@@ -48,7 +49,7 @@
         <aside class="story-rail" aria-label="故事列表">
           <p class="label">Library</p>
           <div id="storyTabs" class="story-tabs"></div>
-          <button id="playFullStory" type="button" class="quiet-button">连续朗读</button>
+          <button id="playFullStory" type="button" class="quiet-button">连续听全文</button>
         </aside>
 
         <section class="story-reader" aria-live="polite">
@@ -65,48 +66,72 @@
             </div>
           </div>
 
-          <article id="activeLineCard" class="active-line-card">
-            <p id="activeSpeaker" class="label">Speaker</p>
-            <p id="activePt" class="active-pt"></p>
-            <button id="activeTranslation" class="translation-reveal" type="button">
-              <span class="mask-bar"></span>
-              <span class="translation-text"></span>
-              <small>点击查看中文</small>
-            </button>
-            <div class="listen-actions">
-              <button id="playLine" type="button">播放本句</button>
-              <button id="playLineSlow" type="button">慢速</button>
-              <button id="repeatLine" type="button">循环 3 次</button>
-            </div>
-          </article>
+          <div id="storyModeTabs" class="story-mode-tabs" role="tablist" aria-label="故事学习模式">
+            <button type="button" class="is-active" data-mode="transcript">Transcript</button>
+            <button type="button" data-mode="drill">Drill</button>
+            <button type="button" data-mode="guide">Guide</button>
+          </div>
 
-          <div id="lineList" class="line-list"></div>
+          <div id="transcriptPanel" class="story-mode-panel is-active">
+            <article id="activeLineCard" class="active-line-card">
+              <p id="activeSpeaker" class="label">Speaker</p>
+              <p id="activePt" class="active-pt"></p>
+              <button id="activeTranslation" class="translation-reveal" type="button">
+                <span class="mask-bar"></span>
+                <span class="translation-text"></span>
+                <small>点击查看中文</small>
+              </button>
+              <div class="listen-actions">
+                <button id="playLine" type="button">播放本句</button>
+                <button id="playLineSlow" type="button">慢速</button>
+                <button id="repeatLine" type="button">循环 3 次</button>
+              </div>
+            </article>
+            <div id="lineList" class="line-list"></div>
+          </div>
+
+          <div id="drillPanel" class="story-mode-panel">
+            <section class="drill-section">
+              <p class="label">Core Expressions</p>
+              <div id="coreExpressions" class="expression-list"></div>
+            </section>
+            <section class="drill-section">
+              <p class="label">Substitution</p>
+              <div id="templateList" class="template-list"></div>
+            </section>
+            <section class="drill-section">
+              <p class="label">Listening Check</p>
+              <div id="listeningQuestions" class="question-list"></div>
+            </section>
+          </div>
+
+          <div id="guidePanel" class="story-mode-panel">
+            <section class="guide-grid">
+              <article>
+                <p class="label">Grammar</p>
+                <h3>语法回收</h3>
+                <div id="grammarSummary" class="summary-list"></div>
+              </article>
+              <article>
+                <p class="label">Vocabulary</p>
+                <h3>高频词块</h3>
+                <div id="vocabularySummary" class="vocab-cloud"></div>
+              </article>
+              <article>
+                <p class="label">Practice</p>
+                <h3>举一反三</h3>
+                <div id="practiceSummary" class="practice-list"></div>
+              </article>
+            </section>
+          </div>
         </section>
-      </section>
-
-      <section class="study-grid">
-        <article>
-          <p class="label">Grammar</p>
-          <h2>故事后的语法回收</h2>
-          <div id="grammarSummary" class="summary-list"></div>
-        </article>
-        <article>
-          <p class="label">Vocabulary</p>
-          <h2>单词与高频短语</h2>
-          <div id="vocabularySummary" class="vocab-cloud"></div>
-        </article>
-        <article>
-          <p class="label">Practice</p>
-          <h2>举一反三</h2>
-          <div id="practiceSummary" class="practice-list"></div>
-        </article>
       </section>
 
       <section id="reflectionRecorder" class="recorder-panel">
         <div>
           <p class="eyebrow">Speak Back</p>
-          <h2>录下你的复述或想法</h2>
-          <p>录音只保存在当前浏览器内存中，不上传。适合听完一句后立刻复述，或者用中文/葡语说出理解。</p>
+          <h2>录下你的复述。</h2>
+          <p>录音只保存在当前浏览器内存中，不上传。适合听完一句后立刻复述。</p>
         </div>
         <div class="recorder-box">
           <textarea id="reflectionNote" rows="4" placeholder="听完后写一句提示，例如：这一句我想练 de onde / onde fica。"></textarea>
@@ -122,11 +147,11 @@
       <section class="content-pipeline">
         <div>
           <p class="eyebrow">Next Content</p>
-          <h2>后续扩展：导入短新闻或独立文段</h2>
+          <h2>导入新的 A1-A2 文段。</h2>
         </div>
         <div class="pipeline-card">
-          <p>下一步可以加入一个“文段导入器”：粘贴 A1-A2 难度的短新闻或生活文段，系统自动切句，沿用逐句朗读、翻译遮盖、录音复述这套核心功能。</p>
-          <textarea id="customTextInput" rows="5" placeholder="以后可在这里粘贴新的 pt-PT 文段，自动生成精听材料。"></textarea>
+          <p>粘贴短文后先本地切句，后续可继续接入自动生成 Transcript / Drill / Guide。</p>
+          <textarea id="customTextInput" rows="5" placeholder="在这里粘贴新的 pt-PT 文段。"></textarea>
           <button id="previewCustomText" type="button">本地预览切句</button>
           <div id="customPreview" class="custom-preview"></div>
         </div>

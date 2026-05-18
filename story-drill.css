@@ -1,0 +1,147 @@
+.story-mode-tabs {
+  display: inline-grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  margin-bottom: 18px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.58);
+}
+
+.story-mode-tabs button {
+  min-height: 38px;
+  padding: 8px 14px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+}
+
+.story-mode-tabs button.is-active {
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 0 8px 24px rgba(23, 33, 28, 0.07);
+}
+
+.story-mode-panel {
+  display: none;
+}
+
+.story-mode-panel.is-active {
+  display: block;
+}
+
+.drill-section + .drill-section {
+  margin-top: 24px;
+}
+
+.expression-list,
+.template-list,
+.question-list {
+  display: grid;
+  gap: 10px;
+}
+
+.expression-item {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+
+.expression-item > span {
+  padding-top: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mini-reveal {
+  display: grid;
+  width: 100%;
+  min-height: 58px;
+  gap: 8px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.72);
+  text-align: left;
+}
+
+.mini-reveal:hover,
+.template-variants button:hover,
+.question-item > button:hover {
+  border-color: rgba(14, 67, 82, 0.24);
+  background: var(--white);
+}
+
+.mini-reveal-pt {
+  color: var(--ink);
+  font-family: var(--font-portuguese);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.mini-reveal-zh {
+  display: none;
+  color: var(--muted);
+  opacity: 0;
+  filter: blur(7px);
+  transition: opacity 240ms ease, filter 240ms ease;
+}
+
+.mini-reveal.is-visible .mini-reveal-zh {
+  display: block;
+  opacity: 1;
+  filter: blur(0);
+}
+
+.mini-reveal.is-visible .mask-bar {
+  display: none;
+}
+
+.template-item,
+.question-item,
+.guide-grid article {
+  padding: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.68);
+}
+
+.template-item strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--ink);
+  font-family: var(--font-portuguese);
+}
+
+.template-variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.template-variants button,
+.question-item > button {
+  min-height: 36px;
+  border-color: var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+
+.question-item {
+  display: grid;
+  gap: 10px;
+}
+
+.question-item > button {
+  justify-self: start;
+}
+
+.guide-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.guide-grid h3 {
+  margin: 0 0 12px;
+  font-size: clamp(21px, 3vw, 30px);
+}

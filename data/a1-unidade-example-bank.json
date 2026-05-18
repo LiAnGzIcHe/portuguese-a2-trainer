@@ -706,6 +706,31 @@
       "title": "Na Sala de Aula",
       "scope": "Unidades 1-4",
       "theme_zh": "在教室里：自我介绍、来源、语言、教室物品与颜色",
+      "question_title": "Como digo quem sou?",
+      "core_expressions": [
+        { "pt": "Como te chamas?", "zh": "你叫什么名字？" },
+        { "pt": "Chamo-me Liang.", "zh": "我叫 Liang。" },
+        { "pt": "Sou da China.", "zh": "我来自中国。" },
+        { "pt": "De onde és?", "zh": "你来自哪里？" },
+        { "pt": "Sou de Portugal.", "zh": "我来自葡萄牙。" },
+        { "pt": "Falo um pouco de português.", "zh": "我说一点葡萄牙语。" },
+        { "pt": "Que línguas falas?", "zh": "你说什么语言？" },
+        { "pt": "Onde fica a tua casa?", "zh": "你的家在哪里？" },
+        { "pt": "O que é isso aí?", "zh": "你那儿那个是什么？" },
+        { "pt": "Como se diz isto em português?", "zh": "这个用葡语怎么说？" }
+      ],
+      "substitution_templates": [
+        { "pattern": "Chamo-me ___", "variants": ["Chamo-me Liang.", "Chamo-me Ana.", "Chamo-me Pedro."] },
+        { "pattern": "Sou de ___", "variants": ["Sou da China.", "Sou de Portugal.", "Sou de Lisboa."] },
+        { "pattern": "Falo ___ e um pouco de português", "variants": ["Falo chinês e um pouco de português.", "Falo inglês e um pouco de português.", "Falo francês e um pouco de português."] },
+        { "pattern": "Isto aqui é ___", "variants": ["Isto aqui é um dicionário.", "Isto aqui é uma caneta.", "Isto aqui é um livro."] },
+        { "pattern": "Aquilo ali é ___", "variants": ["Aquilo ali é um quadro.", "Aquilo ali é uma porta.", "Aquilo ali é uma janela."] }
+      ],
+      "listening_questions": [
+        { "question_pt": "De onde é o Liang?", "answer_pt": "É da China.", "answer_zh": "他来自中国。" },
+        { "question_pt": "Que línguas fala o João?", "answer_pt": "Fala português, inglês e um pouco de espanhol.", "answer_zh": "他说葡语、英语和一点西班牙语。" },
+        { "question_pt": "Onde estão os livros?", "answer_pt": "Estão na mesa.", "answer_zh": "书在桌子上。" }
+      ],
       "dialogue": [
         { "speaker": "João", "pt": "Olá! Bom dia! Como te chamas?", "zh": "你好！早上好！你叫什么名字？" },
         { "speaker": "Liang", "pt": "Bom dia. Chamo-me Liang. Sou da China. E tu? De onde és?", "zh": "早上好。我叫Liang。我来自中国。你呢？你来自哪里？" },
@@ -745,6 +770,31 @@
       "title": "Uma Nova Colega",
       "scope": "Unidades 5-8",
       "theme_zh": "一位新同事：物品、职业、城市与工作",
+      "question_title": "Como falo do meu trabalho?",
+      "core_expressions": [
+        { "pt": "Onde está a tua carteira?", "zh": "你的钱包在哪里？" },
+        { "pt": "Tens aqui a carta de condução?", "zh": "你这里有驾照吗？" },
+        { "pt": "Não tenho.", "zh": "我没有。" },
+        { "pt": "A minha carteira está ali.", "zh": "我的钱包在那边。" },
+        { "pt": "Qual é a tua profissão?", "zh": "你的职业是什么？" },
+        { "pt": "Sou médico.", "zh": "我是医生。" },
+        { "pt": "Trabalho num hospital.", "zh": "我在一家医院工作。" },
+        { "pt": "É no terceiro andar.", "zh": "在三楼。" },
+        { "pt": "Gosto muito do meu trabalho.", "zh": "我很喜欢我的工作。" },
+        { "pt": "Ganho pouco dinheiro.", "zh": "我赚的钱很少。" }
+      ],
+      "substitution_templates": [
+        { "pattern": "A minha ___ está ali", "variants": ["A minha carteira está ali.", "A minha mala está ali.", "A minha chave está ali."] },
+        { "pattern": "Tenho nesta mala ___", "variants": ["Tenho nesta mala o meu telemóvel.", "Tenho nesta mala a minha caneta.", "Tenho nesta mala o meu livro."] },
+        { "pattern": "Sou ___", "variants": ["Sou médico.", "Sou secretária.", "Sou estudante."] },
+        { "pattern": "Trabalho num/numa ___", "variants": ["Trabalho num hospital.", "Trabalho numa empresa.", "Trabalho num escritório."] },
+        { "pattern": "Gosto muito de ___", "variants": ["Gosto muito do meu trabalho.", "Gosto muito da minha cidade.", "Gosto muito dos meus colegas."] }
+      ],
+      "listening_questions": [
+        { "question_pt": "Onde está a carteira da Sara?", "answer_pt": "Está no carro.", "answer_zh": "在车里。" },
+        { "question_pt": "Onde trabalha o Pedro?", "answer_pt": "Trabalha num hospital.", "answer_zh": "他在一家医院工作。" },
+        { "question_pt": "A Sara ganha bem?", "answer_pt": "Não. Ganha pouco dinheiro.", "answer_zh": "不。她赚的钱很少。" }
+      ],
       "dialogue": [
         { "speaker": "Pedro", "pt": "Olá, Sara! Onde está a tua carteira? Tens aqui a carta de condução?", "zh": "你好，萨拉！你的钱包在哪？你这里有驾照吗？" },
         { "speaker": "Sara", "pt": "Não tenho. A minha carteira está ali, no meu carro. Mas tenho nesta mala o meu telemóvel. E tu, qual é a tua profissão?", "zh": "我没有。我的钱包在那边，在我的车里。但我的手机在这个包里。你呢，你的职业是什么？" },
@@ -774,6 +824,31 @@
       "title": "Fim de Semana",
       "scope": "Unidades 9-12",
       "theme_zh": "周末时光：家庭、外貌状态与休闲",
+      "question_title": "Como falo da família e do estado?",
+      "core_expressions": [
+        { "pt": "Quem são estas pessoas?", "zh": "这些人是谁？" },
+        { "pt": "São os nossos pais.", "zh": "他们是我们的父母。" },
+        { "pt": "O meu pai é alto.", "zh": "我爸爸很高。" },
+        { "pt": "A minha mãe tem cabelo curto.", "zh": "我妈妈留着短发。" },
+        { "pt": "Eles são simpáticos, não são?", "zh": "他们很友善，对吧？" },
+        { "pt": "O meu pai está doente.", "zh": "我爸爸病了。" },
+        { "pt": "A minha mãe está com sono.", "zh": "我妈妈困了。" },
+        { "pt": "Eles não vão ao cinema, pois não?", "zh": "他们不去电影院了，对吧？" },
+        { "pt": "Vais à praia comigo?", "zh": "你和我去海滩吗？" },
+        { "pt": "Adoro ir à praia.", "zh": "我非常喜欢去海滩。" }
+      ],
+      "substitution_templates": [
+        { "pattern": "O meu/a minha ___ é ___", "variants": ["O meu pai é alto.", "A minha mãe é magra.", "O meu irmão é simpático."] },
+        { "pattern": "___ tem ___", "variants": ["O meu pai tem olhos azuis.", "A minha mãe tem cabelo curto.", "O meu irmão tem cabelo castanho."] },
+        { "pattern": "___ está com ___", "variants": ["O meu pai está com sono.", "A minha mãe está com fome.", "O Nuno está com frio."] },
+        { "pattern": "Vamos ao/à ___", "variants": ["Vamos ao cinema.", "Vamos à praia.", "Vamos às compras."] },
+        { "pattern": "Adoro ir ___", "variants": ["Adoro ir à praia.", "Adoro ir ao cinema.", "Adoro ir às compras."] }
+      ],
+      "listening_questions": [
+        { "question_pt": "Quem está na fotografia?", "answer_pt": "Os pais do Nuno.", "answer_zh": "努诺的父母。" },
+        { "question_pt": "Como está o pai hoje?", "answer_pt": "Está doente.", "answer_zh": "他今天病了。" },
+        { "question_pt": "Para onde vai o Nuno?", "answer_pt": "Vai à praia.", "answer_zh": "他去海滩。" }
+      ],
       "dialogue": [
         { "speaker": "Marta", "pt": "Olá, Nuno! Quem são estas pessoas na fotografia?", "zh": "你好，努诺！照片里这些人是谁？" },
         { "speaker": "Nuno", "pt": "São os nossos pais. O meu pai é alto e tem olhos azuis. A minha mãe é magra e tem cabelo curto.", "zh": "是我们的父母。我爸爸很高，有蓝色的眼睛。我妈妈很瘦，留着短发。" },
@@ -805,6 +880,31 @@
       "title": "Um Jantar Especial",
       "scope": "Unidades 13-16",
       "theme_zh": "特别晚餐：时间、作息、健康与餐厅点餐",
+      "question_title": "Como combino horas, rotina e restaurante?",
+      "core_expressions": [
+        { "pt": "Que horas são?", "zh": "几点了？" },
+        { "pt": "São oito horas da noite.", "zh": "晚上八点。" },
+        { "pt": "O jantar é daqui a trinta minutos.", "zh": "晚餐三十分钟后开始。" },
+        { "pt": "Hoje faço anos.", "zh": "今天我过生日。" },
+        { "pt": "A que horas te levantas?", "zh": "你几点起床？" },
+        { "pt": "Levanto-me sempre às nove.", "zh": "我总是九点起床。" },
+        { "pt": "Podemos entrar agora?", "zh": "我们现在可以进去吗？" },
+        { "pt": "O que é que queres comer?", "zh": "你想吃什么？" },
+        { "pt": "Pode trazer a ementa?", "zh": "可以拿菜单来吗？" },
+        { "pt": "Queria meia dose de peixe.", "zh": "我想要半份鱼。" }
+      ],
+      "substitution_templates": [
+        { "pattern": "São ___ horas da noite", "variants": ["São oito horas da noite.", "São nove horas da noite.", "São dez horas da noite."] },
+        { "pattern": "O/A ___ é daqui a ___ minutos", "variants": ["O jantar é daqui a trinta minutos.", "A aula é daqui a dez minutos.", "A reunião é daqui a vinte minutos."] },
+        { "pattern": "Levanto-me às ___", "variants": ["Levanto-me às oito.", "Levanto-me às nove.", "Levanto-me às sete e meia."] },
+        { "pattern": "Queria ___, por favor", "variants": ["Queria meia dose de peixe, por favor.", "Queria uma sopa, por favor.", "Queria um café, por favor."] },
+        { "pattern": "Onde pomos ___?", "variants": ["Onde pomos os casacos?", "Onde pomos a mala?", "Onde pomos os livros?"] }
+      ],
+      "listening_questions": [
+        { "question_pt": "A que horas é o jantar?", "answer_pt": "É daqui a trinta minutos.", "answer_zh": "三十分钟后。" },
+        { "question_pt": "A que horas se levanta a Inês?", "answer_pt": "Levanta-se às nove.", "answer_zh": "她九点起床。" },
+        { "question_pt": "O que quer o Vasco comer?", "answer_pt": "Quer peixe grelhado.", "answer_zh": "他想吃烤鱼。" }
+      ],
       "dialogue": [
         { "speaker": "Vasco", "pt": "Olá, Inês! Que horas são?", "zh": "你好，伊内丝！几点了？" },
         { "speaker": "Inês", "pt": "São oito horas da noite. O nosso jantar é daqui a trinta minutos.", "zh": "晚上八点。我们的晚餐在30分钟后。" },

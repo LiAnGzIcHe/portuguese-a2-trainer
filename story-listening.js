@@ -2,6 +2,7 @@ const state = {
   stories: [],
   storyIndex: 0,
   lineIndex: 0,
+  mode: "transcript",
   voices: [],
   repeatTimer: null,
   mediaRecorder: null,
@@ -14,6 +15,10 @@ const elements = {
   rate: document.querySelector("#storyRate"),
   rateValue: document.querySelector("#storyRateValue"),
   tabs: document.querySelector("#storyTabs"),
+  modeTabs: document.querySelector("#storyModeTabs"),
+  transcriptPanel: document.querySelector("#transcriptPanel"),
+  drillPanel: document.querySelector("#drillPanel"),
+  guidePanel: document.querySelector("#guidePanel"),
   playFullStory: document.querySelector("#playFullStory"),
   storyScope: document.querySelector("#storyScope"),
   storyTitle: document.querySelector("#storyTitle"),
@@ -31,6 +36,9 @@ const elements = {
   grammar: document.querySelector("#grammarSummary"),
   vocabulary: document.querySelector("#vocabularySummary"),
   practice: document.querySelector("#practiceSummary"),
+  coreExpressions: document.querySelector("#coreExpressions"),
+  templateList: document.querySelector("#templateList"),
+  listeningQuestions: document.querySelector("#listeningQuestions"),
   startRecording: document.querySelector("#startRecording"),
   stopRecording: document.querySelector("#stopRecording"),
   recordingStatus: document.querySelector("#recordingStatus"),
@@ -40,7 +48,7 @@ const elements = {
   customPreview: document.querySelector("#customPreview")
 };
 
-function ptPtVoice(voice) {
+function isPtPtVoice(voice) {
   return voice.lang.replace("_", "-").toLowerCase() === "pt-pt";
 }
 
@@ -54,8 +62,10 @@ function loadVoices() {
     return;
   }
 
-  const allPortuguese = window.speechSynthesis.getVoices().filter((voice) => voice.lang.toLowerCase().startsWith("pt"));
-  state.voices = allPortuguese.filter(ptPtVoice);
+  const allPortuguese = window.speechSynthesis
+    .getVoices()
+    .filter((voice) => voice.lang.toLowerCase().startsWith("pt"));
+  state.voices = allPortuguese.filter(isPtPtVoice);
   elements.voiceSelect.innerHTML = "";
 
   if (!state.voices.length) {
@@ -116,12 +126,13 @@ function renderTabs() {
     const scope = document.createElement("span");
     button.type = "button";
     button.className = `story-tab${index === state.storyIndex ? " is-active" : ""}`;
-    button.textContent = story.title;
-    scope.textContent = story.scope;
+    button.textContent = story.question_title || story.title;
+    scope.textContent = `${story.scope} · ${story.title}`;
     button.appendChild(scope);
     button.addEventListener("click", () => {
       state.storyIndex = index;
       state.lineIndex = 0;
+      state.mode = "transcript";
       renderStory();
     });
     elements.tabs.appendChild(button);
@@ -131,12 +142,14 @@ function renderTabs() {
 function renderStory() {
   const story = currentStory();
   elements.storyScope.textContent = story.scope;
-  elements.storyTitle.textContent = story.title;
-  elements.storyTheme.textContent = story.theme_zh;
+  elements.storyTitle.textContent = story.question_title || story.title;
+  elements.storyTheme.textContent = `${story.title} · ${story.theme_zh}`;
   renderTabs();
   renderLineList();
   renderActiveLine(false);
+  renderDrill(story);
   renderSummaries(story);
+  renderMode();
 }
 
 function renderActiveLine(revealTranslation) {
@@ -222,6 +235,83 @@ function renderSummaries(story) {
   });
 }
 
+function revealButton(text, translation) {
+  const button = document.createElement("button");
+  const pt = document.createElement("span");
+  const mask = document.createElement("span");
+  const zh = document.createElement("span");
+  button.type = "button";
+  button.className = "mini-reveal";
+  pt.className = "mini-reveal-pt";
+  mask.className = "mask-bar";
+  zh.className = "mini-reveal-zh";
+  pt.textContent = text;
+  zh.textContent = translation;
+  button.append(pt, mask, zh);
+  button.addEventListener("click", () => button.classList.toggle("is-visible"));
+  return button;
+}
+
+function renderDrill(story) {
+  elements.coreExpressions.innerHTML = "";
+  (story.core_expressions || []).forEach((expression, index) => {
+    const item = document.createElement("div");
+    const number = document.createElement("span");
+    const reveal = revealButton(expression.pt, expression.zh);
+    item.className = "expression-item";
+    number.textContent = String(index + 1).padStart(2, "0");
+    reveal.addEventListener("dblclick", () => speak(expression.pt));
+    item.append(number, reveal);
+    elements.coreExpressions.appendChild(item);
+  });
+
+  elements.templateList.innerHTML = "";
+  (story.substitution_templates || []).forEach((template) => {
+    const item = document.createElement("article");
+    const pattern = document.createElement("strong");
+    const variants = document.createElement("div");
+    item.className = "template-item";
+    pattern.textContent = template.pattern;
+    variants.className = "template-variants";
+    (template.variants || []).forEach((variant) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.textContent = variant;
+      chip.addEventListener("click", () => speak(variant));
+      variants.appendChild(chip);
+    });
+    item.append(pattern, variants);
+    elements.templateList.appendChild(item);
+  });
+
+  elements.listeningQuestions.innerHTML = "";
+  (story.listening_questions || []).forEach((question) => {
+    const item = document.createElement("article");
+    const prompt = document.createElement("button");
+    const answer = revealButton(question.answer_pt, question.answer_zh);
+    item.className = "question-item";
+    prompt.type = "button";
+    prompt.textContent = question.question_pt;
+    prompt.addEventListener("click", () => speak(question.question_pt));
+    item.append(prompt, answer);
+    elements.listeningQuestions.appendChild(item);
+  });
+}
+
+function renderMode() {
+  const panels = {
+    transcript: elements.transcriptPanel,
+    drill: elements.drillPanel,
+    guide: elements.guidePanel
+  };
+  Object.entries(panels).forEach(([mode, panel]) => {
+    panel.classList.toggle("is-active", state.mode === mode);
+  });
+  elements.modeTabs.querySelectorAll("button").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.mode === state.mode);
+  });
+}
+
 function moveLine(step) {
   const story = currentStory();
   state.lineIndex = (state.lineIndex + step + story.dialogue.length) % story.dialogue.length;
@@ -285,9 +375,7 @@ function previewCustomText() {
     .split(/(?<=[.!?。！？])\s+/)
     .map((sentence) => sentence.trim())
     .filter(Boolean);
-  elements.customPreview.innerHTML = sentences.length
-    ? ""
-    : "";
+  elements.customPreview.innerHTML = "";
   const previewItems = sentences.length ? sentences : ["粘贴文段后会在这里显示切句结果。"];
   previewItems.forEach((sentence) => {
     const item = document.createElement("p");
@@ -299,6 +387,12 @@ function previewCustomText() {
 function bindEvents() {
   elements.rate.addEventListener("input", () => {
     elements.rateValue.textContent = Number(elements.rate.value).toFixed(2);
+  });
+  elements.modeTabs.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-mode]");
+    if (!button) return;
+    state.mode = button.dataset.mode;
+    renderMode();
   });
   elements.prevLine.addEventListener("click", () => moveLine(-1));
   elements.nextLine.addEventListener("click", () => moveLine(1));
