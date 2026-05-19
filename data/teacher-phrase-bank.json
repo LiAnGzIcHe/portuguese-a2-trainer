@@ -1,8 +1,8 @@
 {
   "title": "Teacher Classroom Portuguese Phrase Bank",
   "language_standard": "pt-PT",
-  "source_note": "First cleaned bank extracted from user-provided classroom transcripts. Only high-confidence classroom phrases are promoted to study items.",
-  "version": "2026-05-16",
+  "source_note": "Cleaned bank extracted from user-provided classroom transcripts. Only high-confidence classroom phrases are promoted to study items; noisy ASR remains in the transcript pipeline.",
+  "version": "2026-05-19",
   "categories": [
     {
       "id": "classroom-control",
@@ -10,13 +10,102 @@
       "title_pt": "Gestão da aula",
       "goal_zh": "听懂老师让大家停下、继续、注意、休息的指令。",
       "phrases": [
-        { "pt": "Atenção.", "zh": "注意。", "pattern": "single command", "level": "A1", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Vamos parar.", "zh": "我们停一下。", "pattern": "Vamos + infinitivo", "level": "A1", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Vamos continuar.", "zh": "我们继续。", "pattern": "Vamos + infinitivo", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Vamos fazer mais um bocadinho.", "zh": "我们再做一小会儿。", "pattern": "Vamos + infinitivo + tempo", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Descansem.", "zh": "休息一下。", "pattern": "imperativo plural", "level": "A1", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Já está na hora.", "zh": "已经到时间了。", "pattern": "estar na hora", "level": "A2", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Temos quinze minutos.", "zh": "我们有十五分钟。", "pattern": "Ter + tempo", "level": "A1", "source": "class-transcript-01", "status": "verified" }
+        {
+          "pt": "Atenção.",
+          "zh": "注意。",
+          "pattern": "single command",
+          "level": "A1",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Vamos parar.",
+          "zh": "我们停一下。",
+          "pattern": "Vamos + infinitivo",
+          "level": "A1",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Vamos continuar.",
+          "zh": "我们继续。",
+          "pattern": "Vamos + infinitivo",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Vamos fazer mais um bocadinho.",
+          "zh": "我们再做一小会儿。",
+          "pattern": "Vamos + infinitivo + tempo",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Descansem.",
+          "zh": "休息一下。",
+          "pattern": "imperativo plural",
+          "level": "A1",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Já está na hora.",
+          "zh": "已经到时间了。",
+          "pattern": "estar na hora",
+          "level": "A2",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Temos quinze minutos.",
+          "zh": "我们有十五分钟。",
+          "pattern": "Ter + tempo",
+          "level": "A1",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Então nós vamos continuar.",
+          "zh": "那么我们继续。",
+          "pattern": "Então nós vamos + infinitivo",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Pronto, aqui é fácil.",
+          "zh": "好了，这里很简单。",
+          "pattern": "Pronto, aqui é + adjetivo",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Está bem?",
+          "zh": "可以吗？/明白吗？",
+          "pattern": "estar bem + pergunta",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Podemos?",
+          "zh": "可以了吗？/我们可以吗？",
+          "pattern": "poder + pergunta curta",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Vamos ver.",
+          "zh": "我们来看。",
+          "pattern": "Vamos + infinitivo",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        }
       ]
     },
     {
@@ -25,13 +114,110 @@
       "title_pt": "Instruções de trabalho",
       "goal_zh": "听懂老师让你写、回答、做练习、听文本。",
       "phrases": [
-        { "pt": "Façam este exercício.", "zh": "做这个练习。", "pattern": "Façam + objeto", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Escrevam a resposta completa.", "zh": "写完整答案。", "pattern": "Escrevam + objeto", "level": "A2", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Vocês têm que escrever.", "zh": "你们必须写。", "pattern": "Vocês têm que + infinitivo", "level": "A2", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Vocês vão ouvir o texto.", "zh": "你们要听这篇文本。", "pattern": "Vocês vão + infinitivo", "level": "A1", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Respondam à pergunta.", "zh": "回答这个问题。", "pattern": "imperativo + complemento", "level": "A2", "source": "class-transcript-02", "status": "cleaned" },
-        { "pt": "Leiam a frase.", "zh": "读这个句子。", "pattern": "imperativo plural", "level": "A1", "source": "class-transcript-02", "status": "cleaned" },
-        { "pt": "Coloquem as palavras na frase.", "zh": "把词放进句子里。", "pattern": "Coloquem + objeto + lugar", "level": "A2", "source": "class-transcript-01", "status": "verified" }
+        {
+          "pt": "Façam este exercício.",
+          "zh": "做这个练习。",
+          "pattern": "Façam + objeto",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Escrevam a resposta completa.",
+          "zh": "写完整答案。",
+          "pattern": "Escrevam + objeto",
+          "level": "A2",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Vocês têm que escrever.",
+          "zh": "你们必须写。",
+          "pattern": "Vocês têm que + infinitivo",
+          "level": "A2",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Vocês vão ouvir o texto.",
+          "zh": "你们要听这篇文本。",
+          "pattern": "Vocês vão + infinitivo",
+          "level": "A1",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Respondam à pergunta.",
+          "zh": "回答这个问题。",
+          "pattern": "imperativo + complemento",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Leiam a frase.",
+          "zh": "读这个句子。",
+          "pattern": "imperativo plural",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Coloquem as palavras na frase.",
+          "zh": "把词放进句子里。",
+          "pattern": "Coloquem + objeto + lugar",
+          "level": "A2",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Leiam primeiro.",
+          "zh": "你们先读。",
+          "pattern": "Leiam + advérbio",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Ouçam.",
+          "zh": "你们听。",
+          "pattern": "imperativo plural",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Façam o exercício à esquerda.",
+          "zh": "做左边的练习。",
+          "pattern": "Façam + objeto + lugar",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Completem as expressões.",
+          "zh": "补全这些表达。",
+          "pattern": "Completem + objeto",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Vocês têm que se levantar às oito horas.",
+          "zh": "你们必须八点起床。",
+          "pattern": "Vocês têm que + reflexivo + hora",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Vocês vão falar da imagem.",
+          "zh": "你们要谈论这张图片。",
+          "pattern": "Vocês vão + infinitivo + de",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        }
       ]
     },
     {
@@ -40,12 +226,94 @@
       "title_pt": "Repetição e compreensão",
       "goal_zh": "抓住老师重复、解释、确认你是否听懂的信号。",
       "phrases": [
-        { "pt": "Vou repetir.", "zh": "我会重复一遍。", "pattern": "Ir + infinitivo", "level": "A1", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Eu vou repetir para vocês perceberem.", "zh": "我会重复一遍，好让你们理解。", "pattern": "Ir + infinitivo + para", "level": "A2", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Vocês perceberam?", "zh": "你们明白了吗？", "pattern": "perceber + pergunta", "level": "A2", "source": "class-transcript-01", "status": "cleaned" },
-        { "pt": "Está tudo bem?", "zh": "都还好吗？", "pattern": "estar + tudo bem", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Não consegue?", "zh": "不行吗？/做不到吗？", "pattern": "conseguir + pergunta", "level": "A2", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Não sei se vocês se lembram.", "zh": "我不知道你们是否还记得。", "pattern": "Não sei se + frase", "level": "A2", "source": "class-transcript-02", "status": "verified" }
+        {
+          "pt": "Vou repetir.",
+          "zh": "我会重复一遍。",
+          "pattern": "Ir + infinitivo",
+          "level": "A1",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Eu vou repetir para vocês perceberem.",
+          "zh": "我会重复一遍，好让你们理解。",
+          "pattern": "Ir + infinitivo + para",
+          "level": "A2",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Vocês perceberam?",
+          "zh": "你们明白了吗？",
+          "pattern": "perceber + pergunta",
+          "level": "A2",
+          "source": "class-transcript-01",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Está tudo bem?",
+          "zh": "都还好吗？",
+          "pattern": "estar + tudo bem",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Não consegue?",
+          "zh": "不行吗？/做不到吗？",
+          "pattern": "conseguir + pergunta",
+          "level": "A2",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Não sei se vocês se lembram.",
+          "zh": "我不知道你们是否还记得。",
+          "pattern": "Não sei se + frase",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Vamos ver como é que vocês percebem.",
+          "zh": "我们来看看你们是怎么理解的。",
+          "pattern": "Vamos ver como é que + frase",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Eu estou a falar de uma maneira normal.",
+          "zh": "我正在用正常的方式说。",
+          "pattern": "estar a + infinitivo",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "cleaned"
+        },
+        {
+          "pt": "As pessoas falam muito depressa.",
+          "zh": "人们说话很快。",
+          "pattern": "sujeito + falar + advérbio",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "É para vocês se habituarem.",
+          "zh": "这是为了让你们习惯。",
+          "pattern": "É para + pronome + infinitivo pessoal",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Vocês já sabem.",
+          "zh": "你们已经知道了。",
+          "pattern": "já + saber",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        }
       ]
     },
     {
@@ -54,13 +322,110 @@
       "title_pt": "Explicação gramatical",
       "goal_zh": "听懂老师讲不同、相似、正确形式、句子结构。",
       "phrases": [
-        { "pt": "Isto é diferente.", "zh": "这是不同的。", "pattern": "Isto é + adjetivo", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "É parecido.", "zh": "这是相似的。", "pattern": "É + adjetivo", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Em português, é diferente.", "zh": "在葡萄牙语里，这是不同的。", "pattern": "Em + língua, é + adjetivo", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Aqui usamos o infinitivo.", "zh": "这里我们使用不定式。", "pattern": "Aqui usamos + termo", "level": "A2", "source": "class-transcript-02", "status": "cleaned" },
-        { "pt": "A forma correta é esta.", "zh": "正确形式是这个。", "pattern": "A forma correta é + demonstrativo", "level": "A2", "source": "class-transcript-01", "status": "cleaned" },
-        { "pt": "O complemento direto é o objeto direto.", "zh": "直接补语就是直接宾语。", "pattern": "X é Y", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "A palavra está entre aspas.", "zh": "这个词在引号里。", "pattern": "estar + lugar", "level": "A2", "source": "class-transcript-02", "status": "verified" }
+        {
+          "pt": "Isto é diferente.",
+          "zh": "这是不同的。",
+          "pattern": "Isto é + adjetivo",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "É parecido.",
+          "zh": "这是相似的。",
+          "pattern": "É + adjetivo",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Em português, é diferente.",
+          "zh": "在葡萄牙语里，这是不同的。",
+          "pattern": "Em + língua, é + adjetivo",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Aqui usamos o infinitivo.",
+          "zh": "这里我们使用不定式。",
+          "pattern": "Aqui usamos + termo",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "cleaned"
+        },
+        {
+          "pt": "A forma correta é esta.",
+          "zh": "正确形式是这个。",
+          "pattern": "A forma correta é + demonstrativo",
+          "level": "A2",
+          "source": "class-transcript-01",
+          "status": "cleaned"
+        },
+        {
+          "pt": "O complemento direto é o objeto direto.",
+          "zh": "直接补语就是直接宾语。",
+          "pattern": "X é Y",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "A palavra está entre aspas.",
+          "zh": "这个词在引号里。",
+          "pattern": "estar + lugar",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Há outra maneira de fazer a pergunta?",
+          "zh": "还有另一种提问方式吗？",
+          "pattern": "Há outra maneira de + infinitivo",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "A que horas?",
+          "zh": "几点？",
+          "pattern": "A que horas?",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "É isso exatamente.",
+          "zh": "正是这样。",
+          "pattern": "É isso + advérbio",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "É só continuar.",
+          "zh": "只要继续就可以。",
+          "pattern": "É só + infinitivo",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "É só para vocês colocarem uma noite.",
+          "zh": "只是让你们填一个夜晚时间表达。",
+          "pattern": "É só para + infinitivo pessoal",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "cleaned"
+        },
+        {
+          "pt": "É um sítio, é só um nome.",
+          "zh": "这是一个地点，只是一个名词。",
+          "pattern": "É + nome",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "cleaned"
+        }
       ]
     },
     {
@@ -69,12 +434,102 @@
       "title_pt": "Navegação no texto",
       "goal_zh": "听懂老师说页码、行数、题号、文本中有没有信息。",
       "phrases": [
-        { "pt": "Estamos na linha quatro.", "zh": "我们在第四行。", "pattern": "Estar em + lugar", "level": "A1", "source": "class-transcript-01", "status": "verified" },
-        { "pt": "Estamos aqui na pergunta quatro.", "zh": "我们现在在第四题这里。", "pattern": "Estar aqui em + item", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "No texto, não temos informação.", "zh": "在文本里，我们没有信息。", "pattern": "No texto, não temos + nome", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Não sabemos onde é que ela fica.", "zh": "我们不知道她住在哪里。", "pattern": "Não sabemos onde é que + frase", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Quanto tempo ela vai ficar?", "zh": "她要待多久？", "pattern": "Quanto tempo + ir + infinitivo", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Vamos voltar.", "zh": "我们回到前面。", "pattern": "Vamos + infinitivo", "level": "A1", "source": "class-transcript-02", "status": "verified" }
+        {
+          "pt": "Estamos na linha quatro.",
+          "zh": "我们在第四行。",
+          "pattern": "Estar em + lugar",
+          "level": "A1",
+          "source": "class-transcript-01",
+          "status": "verified"
+        },
+        {
+          "pt": "Estamos aqui na pergunta quatro.",
+          "zh": "我们现在在第四题这里。",
+          "pattern": "Estar aqui em + item",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "No texto, não temos informação.",
+          "zh": "在文本里，我们没有信息。",
+          "pattern": "No texto, não temos + nome",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Não sabemos onde é que ela fica.",
+          "zh": "我们不知道她住在哪里。",
+          "pattern": "Não sabemos onde é que + frase",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Quanto tempo ela vai ficar?",
+          "zh": "她要待多久？",
+          "pattern": "Quanto tempo + ir + infinitivo",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Vamos voltar.",
+          "zh": "我们回到前面。",
+          "pattern": "Vamos + infinitivo",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Abram a página do manual.",
+          "zh": "打开教材的这一页。",
+          "pattern": "Abram + objeto",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Vamos abrir a página.",
+          "zh": "我们打开这一页。",
+          "pattern": "Vamos + infinitivo + objeto",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Tentem aceder.",
+          "zh": "你们试着进入/访问。",
+          "pattern": "Tentem + infinitivo",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Passamos para a página trinta e um.",
+          "zh": "我们转到第31页。",
+          "pattern": "Passar para + página",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Aqui vocês já sabem.",
+          "zh": "这里你们已经知道了。",
+          "pattern": "Aqui + frase",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "A opção é sete horas.",
+          "zh": "选项是七点。",
+          "pattern": "A opção é + hora",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        }
       ]
     },
     {
@@ -83,12 +538,86 @@
       "title_pt": "Correção e feedback",
       "goal_zh": "听懂老师说对、错、不是这样、可以这样说。",
       "phrases": [
-        { "pt": "Não é assim.", "zh": "不是这样。", "pattern": "Não é + advérbio", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "É assim.", "zh": "是这样。", "pattern": "É + advérbio", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Está certo.", "zh": "这是对的。", "pattern": "Estar + adjetivo", "level": "A1", "source": "class-transcript-02", "status": "cleaned" },
-        { "pt": "Fica melhor assim.", "zh": "这样更好。", "pattern": "Ficar + comparativo", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Pode ser.", "zh": "可以。", "pattern": "Poder + ser", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Não é possível.", "zh": "这是不可能的。", "pattern": "Não é + adjetivo", "level": "A2", "source": "class-transcript-02", "status": "verified" }
+        {
+          "pt": "Não é assim.",
+          "zh": "不是这样。",
+          "pattern": "Não é + advérbio",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "É assim.",
+          "zh": "是这样。",
+          "pattern": "É + advérbio",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Está certo.",
+          "zh": "这是对的。",
+          "pattern": "Estar + adjetivo",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Fica melhor assim.",
+          "zh": "这样更好。",
+          "pattern": "Ficar + comparativo",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Pode ser.",
+          "zh": "可以。",
+          "pattern": "Poder + ser",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Não é possível.",
+          "zh": "这是不可能的。",
+          "pattern": "Não é + adjetivo",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Chegou mesmo a tempo.",
+          "zh": "正好来得及时。",
+          "pattern": "chegar + a tempo",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Está bastante fácil, não é?",
+          "zh": "挺简单的，对吧？",
+          "pattern": "Está + adjetivo, não é?",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Pode acontecer.",
+          "zh": "这可能发生。",
+          "pattern": "Poder + infinitivo",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Eu diria mais cedo.",
+          "zh": "我会说更早。",
+          "pattern": "Eu diria + expressão",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        }
       ]
     },
     {
@@ -97,12 +626,54 @@
       "title_pt": "Expressões de cortesia",
       "goal_zh": "听懂课堂里的礼貌请求、酒店/服务场景例句。",
       "phrases": [
-        { "pt": "Com licença.", "zh": "不好意思。/打扰一下。", "pattern": "fixed phrase", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Por favor.", "zh": "请。", "pattern": "fixed phrase", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Muito obrigado.", "zh": "非常感谢。", "pattern": "fixed phrase", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Seja bem-vindo.", "zh": "欢迎您。", "pattern": "Seja + adjetivo", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "O seu passaporte, faz favor.", "zh": "请出示您的护照。", "pattern": "O seu + nome, faz favor", "level": "A2", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "O que deseja?", "zh": "您想要什么？", "pattern": "O que + desejar", "level": "A2", "source": "class-transcript-02", "status": "verified" }
+        {
+          "pt": "Com licença.",
+          "zh": "不好意思。/打扰一下。",
+          "pattern": "fixed phrase",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Por favor.",
+          "zh": "请。",
+          "pattern": "fixed phrase",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Muito obrigado.",
+          "zh": "非常感谢。",
+          "pattern": "fixed phrase",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Seja bem-vindo.",
+          "zh": "欢迎您。",
+          "pattern": "Seja + adjetivo",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "O seu passaporte, faz favor.",
+          "zh": "请出示您的护照。",
+          "pattern": "O seu + nome, faz favor",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "O que deseja?",
+          "zh": "您想要什么？",
+          "pattern": "O que + desejar",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        }
       ]
     },
     {
@@ -111,11 +682,134 @@
       "title_pt": "Lugar e posição",
       "goal_zh": "听懂老师讲位置词、方位词、例句里的地点。",
       "phrases": [
-        { "pt": "Está em cima da mesa.", "zh": "它在桌子上。", "pattern": "Estar + locução de lugar", "level": "A1", "source": "class-transcript-02", "status": "verified" },
-        { "pt": "Está ao lado do livro.", "zh": "它在书旁边。", "pattern": "Estar + ao lado de", "level": "A1", "source": "class-transcript-02", "status": "cleaned" },
-        { "pt": "Está dentro da mala.", "zh": "它在包里面。", "pattern": "Estar + dentro de", "level": "A1", "source": "class-transcript-02", "status": "cleaned" },
-        { "pt": "A janela está à esquerda.", "zh": "窗户在左边。", "pattern": "X está + direção", "level": "A1", "source": "class-transcript-02", "status": "cleaned" },
-        { "pt": "O livro está sobre a mesa.", "zh": "书在桌子上。", "pattern": "Estar + sobre + nome", "level": "A2", "source": "class-transcript-02", "status": "verified" }
+        {
+          "pt": "Está em cima da mesa.",
+          "zh": "它在桌子上。",
+          "pattern": "Estar + locução de lugar",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "verified"
+        },
+        {
+          "pt": "Está ao lado do livro.",
+          "zh": "它在书旁边。",
+          "pattern": "Estar + ao lado de",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Está dentro da mala.",
+          "zh": "它在包里面。",
+          "pattern": "Estar + dentro de",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "cleaned"
+        },
+        {
+          "pt": "A janela está à esquerda.",
+          "zh": "窗户在左边。",
+          "pattern": "X está + direção",
+          "level": "A1",
+          "source": "class-transcript-02",
+          "status": "cleaned"
+        },
+        {
+          "pt": "O livro está sobre a mesa.",
+          "zh": "书在桌子上。",
+          "pattern": "Estar + sobre + nome",
+          "level": "A2",
+          "source": "class-transcript-02",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "id": "time-routine",
+      "title_zh": "时间与作息",
+      "title_pt": "Horas e rotina diária",
+      "goal_zh": "听懂老师讲几点、一天的开始、起床、上班、吃早餐和时间表达。",
+      "phrases": [
+        {
+          "pt": "O dia da Ana começa às sete e meia.",
+          "zh": "Ana 的一天七点半开始。",
+          "pattern": "O dia de + pessoa + começar + hora",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "cleaned"
+        },
+        {
+          "pt": "O vosso dia também começa assim?",
+          "zh": "你们的一天也是这样开始的吗？",
+          "pattern": "O vosso dia + também + começar",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Vocês levantam-se, tomam o pequeno-almoço e vão trabalhar.",
+          "zh": "你们起床、吃早餐，然后去工作。",
+          "pattern": "rotina em sequência",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "cleaned"
+        },
+        {
+          "pt": "Ana levanta-se às sete e meia.",
+          "zh": "Ana 七点半起床。",
+          "pattern": "pessoa + levantar-se + hora",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Às oito e meia, vai para o escritório.",
+          "zh": "八点半，她去办公室。",
+          "pattern": "Às + hora, ir para + lugar",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Vou ao teatro às nove horas da noite.",
+          "zh": "我晚上九点去剧院。",
+          "pattern": "Ir a + lugar + às + hora",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Vou ao ginásio às duas horas.",
+          "zh": "我两点去健身房。",
+          "pattern": "Ir a + lugar + às + hora",
+          "level": "A2",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Às duas da tarde.",
+          "zh": "下午两点。",
+          "pattern": "às + hora + parte do dia",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "Amanhã de manhã.",
+          "zh": "明天早上。",
+          "pattern": "tempo futuro",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        },
+        {
+          "pt": "É intervalo.",
+          "zh": "这是课间休息。",
+          "pattern": "ser + nome",
+          "level": "A1",
+          "source": "class-transcript-03",
+          "status": "verified"
+        }
       ]
     }
   ],
@@ -126,7 +820,15 @@
       "zh": "我们来/我们要……",
       "base": "Vamos {verb}.",
       "slots": {
-        "verb": ["continuar", "parar", "repetir", "ouvir", "escrever", "responder", "voltar"]
+        "verb": [
+          "continuar",
+          "parar",
+          "repetir",
+          "ouvir",
+          "escrever",
+          "responder",
+          "voltar"
+        ]
       }
     },
     {
@@ -135,7 +837,13 @@
       "zh": "我会/我要……",
       "base": "Vou {verb}.",
       "slots": {
-        "verb": ["repetir", "explicar", "enviar", "escrever", "mostrar"]
+        "verb": [
+          "repetir",
+          "explicar",
+          "enviar",
+          "escrever",
+          "mostrar"
+        ]
       }
     },
     {
@@ -144,7 +852,13 @@
       "zh": "你们必须……",
       "base": "Vocês têm que {verb}.",
       "slots": {
-        "verb": ["escrever", "ouvir", "responder", "ler", "fazer o exercício"]
+        "verb": [
+          "escrever",
+          "ouvir",
+          "responder",
+          "ler",
+          "fazer o exercício"
+        ]
       }
     },
     {
@@ -153,7 +867,10 @@
       "zh": "在文本里，我们有/没有……",
       "base": "No texto, {polarity} informação.",
       "slots": {
-        "polarity": ["temos", "não temos"]
+        "polarity": [
+          "temos",
+          "não temos"
+        ]
       }
     },
     {
@@ -162,12 +879,69 @@
       "zh": "它在……",
       "base": "Está {place}.",
       "slots": {
-        "place": ["em cima da mesa", "ao lado do livro", "dentro da mala", "à esquerda", "à direita"]
+        "place": [
+          "em cima da mesa",
+          "ao lado do livro",
+          "dentro da mala",
+          "à esquerda",
+          "à direita"
+        ]
+      }
+    },
+    {
+      "id": "a-que-horas",
+      "title": "A que horas + verbo?",
+      "zh": "几点做某事？",
+      "base": "A que horas {subject} {verb}?",
+      "slots": {
+        "subject": [
+          "a Ana",
+          "vocês",
+          "o professor",
+          "a aula"
+        ],
+        "verb": [
+          "se levanta",
+          "começam",
+          "chega",
+          "começa"
+        ]
+      }
+    },
+    {
+      "id": "as-horas-rotina",
+      "title": "Às + hora + rotina",
+      "zh": "几点做日常动作",
+      "base": "Às {time}, {subject} {action}.",
+      "slots": {
+        "time": [
+          "sete e meia",
+          "oito horas",
+          "oito e meia",
+          "duas da tarde",
+          "nove da noite"
+        ],
+        "subject": [
+          "a Ana",
+          "vocês",
+          "eu"
+        ],
+        "action": [
+          "levanta-se",
+          "vão trabalhar",
+          "vou ao ginásio",
+          "vai para o escritório"
+        ]
       }
     }
   ],
   "raw_pipeline": {
-    "stages": ["raw_transcript", "cleaned_candidate", "verified_phrase", "study_bank"],
+    "stages": [
+      "raw_transcript",
+      "cleaned_candidate",
+      "verified_phrase",
+      "study_bank"
+    ],
     "note_zh": "课堂转录噪声较高，必须先清洗和人工确认，再进入正式学习库。"
   }
 }
